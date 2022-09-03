@@ -26,3 +26,9 @@ img{
     height: auto;
     vertical-align: middle;
 }
+
+//Fix IOS 15 default 
+button{
+    color: #000;
+    background-color: transparent;
+}
