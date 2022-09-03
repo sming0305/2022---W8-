@@ -8,14 +8,14 @@ $(document).ready(function () {
   $(".wallet_botton").click(function (e) { 
     $(this).toggleClass("btn-active");
     $(this).toggleClass("outline-secondary-1");
-    $(this).toggleClass("border-dark");
+    $(this).toggleClass("border-primary");
     $(this).toggleClass("border-secondary");
     $(this).find(".check-icon").toggleClass("show");
     $(this).parent().siblings("li").find(".wallet_botton").removeClass("btn-active");
     $(this).parent().siblings("li").find(".wallet_botton").find(".fade").removeClass("show");
     $(this).parent().siblings("li").find(".wallet_botton").removeClass("border-secondary");
-    $(this).parent().siblings("li").find(".wallet_botton").removeClass("outline-secondary-2");
-    $(this).parent().siblings("li").find(".wallet_botton").addClass("border-dark");
+    $(this).parent().siblings("li").find(".wallet_botton").removeClass("outline-secondary-1");
+    $(this).parent().siblings("li").find(".wallet_botton").addClass("border-primary");
   });
 
   $(".search__button").click(function (e) { 
