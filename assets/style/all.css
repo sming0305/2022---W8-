@@ -18902,6 +18902,11 @@ img {
   vertical-align: middle;
 }
 
+button {
+  color: #000;
+  background-color: transparent;
+}
+
 @media (min-width: 576px) {
   .top-sm-104 {
     top: 104px;
