@@ -1,8 +1,8 @@
 html,body{
     height: 100%;
-    padding-top: 50px;
+    padding-top: 25px;
     @include mobile-min{
-        padding-top: 104px;
+        padding-top: 52px;
     }
 }
 
@@ -25,9 +25,10 @@ img{
     max-width: 100%;
     height: auto;
     vertical-align: middle;
+    
 }
 
-//Fix IOS 15 default 
+// Fix IOS 15.x  button color blue default 
 button{
     color: #000;
     background-color: transparent;

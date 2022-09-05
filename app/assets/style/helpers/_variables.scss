@@ -87,6 +87,7 @@ $theme-colors: (
   "danger":     $danger,
   "light":      $light,
   "dark":       $dark,
+  "black":      $black,
   "main":     #F0F0F0,
 ) !default;
 // scss-docs-end theme-colors-map
@@ -261,6 +262,7 @@ $spacers: (
   7: $spacer * 1.75,
   8: $spacer * 2,
   9: $spacer * 2.25,
+  9_5: $spacer * 2.375,
   10: $spacer * 2.5,
   10_5: $spacer * 2.625,
   11: $spacer * 2.75,
@@ -268,6 +270,7 @@ $spacers: (
   13: $spacer * 3.25,
   14: $spacer * 3.5,
   15: $spacer * 3.75,
+  15_5: $spacer * 3.875,
   16: $spacer * 4,
   17: $spacer * 4.25,
   18: $spacer * 4.5,
@@ -317,7 +320,7 @@ $stretched-link-z-index:                  1 !default;
 //
 // Style p element.
 
-$paragraph-margin-bottom:   1rem !default;
+$paragraph-margin-bottom:   0rem !default;
 
 
 // Grid breakpoints
@@ -460,7 +463,7 @@ $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
+$h1-font-size:                $font-size-base * 3 !default;
 $h2-font-size:                $font-size-base * 2 !default;
 $h3-font-size:                $font-size-base * 1.75 !default;
 $h4-font-size:                $font-size-base * 1.5 !default;

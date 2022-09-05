@@ -3,13 +3,15 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 @import "./helpers/reboot";
 
+@import "./mixin/mixin";
 
 @import "./utilities/utilities";
 
-@import "./mixin/mixin";
-
 @import "./components/components";
+@import "./components/button";
 
 @import "./base";
 
 @import "./layout/layout";
+
+@import "./page/index";

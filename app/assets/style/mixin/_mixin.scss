@@ -10,6 +10,12 @@
     }
 }
 
+@mixin xl {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
 
 @mixin imgReplaceText ($url, $width, $height) {
     background-image: url($url);
@@ -75,11 +81,7 @@
     }
 }
 
-@mixin pc-plus_min {
-    @media (min-width: 1200px) {
-        @content;
-    }
-}
+
 
 @mixin pc {
     @media (max-width: 992px) {

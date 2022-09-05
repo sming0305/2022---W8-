@@ -1,0 +1,36 @@
+.button-type1 {
+    position: relative;
+    padding: 8px 48px;
+    font-family: 'Squada One', sans-serif;
+    font-size: 18px;
+    line-height: 1.055;
+    border: 1px solid #000;
+    transition-property: background;
+    transition-duration: 500ms;
+    
+    &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: calc(100% - 16px);
+        width: 0;
+        height: 0;
+        border-right: 8px solid #E6553B;
+        border-top: 8px solid transparent;
+        border-left: 8px solid transparent;
+        border-bottom: 8px solid #E6553B;
+    }
+
+    &:hover {
+        background-color: #E6553B;
+
+        &::before {
+            border-right: 8px solid #000;
+            border-bottom: 8px solid #000;
+        }
+    }
+
+    &:active {
+        color: #ffffff;
+    }
+}

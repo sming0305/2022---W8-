@@ -20,6 +20,17 @@
 }
 
 
+.max-height-xl-329 {
+    @include xl {
+        max-height: 340px;
+    }
+}
+
+.max-height-xl-500 {
+    @include xl {
+        max-height: 500px;
+    }
+}
 
 .h-sm-auto{
     @include mobile-min{

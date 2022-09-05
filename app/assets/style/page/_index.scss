@@ -1,0 +1,16 @@
+.img__size--1{
+    object-fit: cover;
+    width: 100%;
+    height: 372px;
+    @include xl{
+        height: 340px;
+    }
+}
+
+
+.img__size--3{
+    object-fit: cover;
+    width: 87px;
+    height: 93px;
+}
+  
