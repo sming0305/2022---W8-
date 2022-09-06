@@ -1,0 +1,90 @@
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.swiper-slide {
+    width: 336px !important;
+    height: 232px !important;
+
+    @include tablet-min {
+        width: 636px !important;
+        height: 439px !important;
+        margin: 0px -93px;
+    }
+
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    transition: 600ms;
+    transform: scale(0.48, 0.59) !important;
+
+    &__img {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    &-1 {
+        background-image: url(../images/artist01.jpg);
+    }
+
+    &-2 {
+        background-image: url(../images/artist03.jpg);
+    }
+
+    &-3 {
+        background-image: url(../images/artist05.jpg);
+    }
+
+    &-4 {
+        background-image: url(../images/artist02.jpg);
+    }
+
+}
+
+.swiper-slide-active,
+.swiper-slide-duplicate-active {
+    transform: scale(1) !important;
+    width: 336px !important;
+    height: 232px !important;
+
+    @include tablet-min {
+        width: 636px !important;
+        height: 439px !important;
+        margin: 0px -54px !important;
+    }
+}
+
+.swiper__controlBox1 {
+    position: initial;
+
+    .swiper-pagination-bullet {
+        border-radius: 0;
+        width: 8px;
+        height: 8px;
+        opacity: 1;
+        background-color: #000;
+
+        &-active {
+            width: 16px;
+            background-color: $secondary;
+        }
+    }
+
+}

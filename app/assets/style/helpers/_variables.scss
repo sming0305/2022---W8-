@@ -255,10 +255,12 @@ $spacers: (
   0_5: $spacer * 0.125,
   1: $spacer * .25,
   2: $spacer * .5,
+  2_5: $spacer * .625,
   3: $spacer * .75,
   4: $spacer,
   5: $spacer * 1.25,
   6: $spacer * 1.5,
+  6_5: $spacer * 1.625,
   7: $spacer * 1.75,
   8: $spacer * 2,
   9: $spacer * 2.25,
@@ -309,8 +311,8 @@ $body-text-align:           null !default;
 
 $link-color:                              $primary !default;
 $link-decoration:                         none !default;
-$link-shade-percentage:                   5% !default;
-$link-hover-color:                        shift-color($secondary, $link-shade-percentage) !default;
+$link-shade-percentage:                   10% !default;
+$link-hover-color:                        shift-color($primary, $link-shade-percentage) !default;
 $link-hover-decoration:                   null !default;
 
 $stretched-link-pseudo-element:           after !default;

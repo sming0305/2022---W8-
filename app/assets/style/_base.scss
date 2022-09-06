@@ -1,35 +1,32 @@
-html,body{
+html,
+body {
     height: 100%;
     padding-top: 25px;
-    @include mobile-min{
+
+    @include mobile-min {
         padding-top: 52px;
     }
 }
 
-main{
+main {
     flex-grow: 1;
 }
 
-a{
+a {
     display: block;
-    
-    &:hover{
-        color: #E6553B;
-    }
-    &:active{
-        color: lighten(#E6553B,10%);
-    }
+    cursor: pointer;
 }
 
-img{
+img {
     max-width: 100%;
     height: auto;
     vertical-align: middle;
-    
+
 }
 
+
 // Fix IOS 15.x  button color blue default 
-button{
+button {
     color: #000;
     background-color: transparent;
 }

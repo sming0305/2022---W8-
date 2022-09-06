@@ -390,19 +390,28 @@
     writing-mode: vertical-lr;
 }
 
+.text-width-size-31{
+    width: 30px;
+}
 
 
+
+
+.mt--z1 {
+    margin-top: -1px !important;
+}
 
 .mb--z1 {
-    margin-bottom: -1px;
+    margin-bottom: -1px !important;
 }
 
 .me--z1 {
-    margin-right: -1px;
+    margin-right: -1px !important;
 }
 
-
-
+.ms--z1 {
+    margin-left: -1px !important;
+}
 
 
 
@@ -449,6 +458,18 @@
 
 .top_50 {
     top: 50px;
+}
+
+.r-0{
+ right: 0;
+}
+
+.b-0{
+    bottom: 0;
+}
+
+.z-18 {
+    z-index: 18;
 }
 
 .z-1060 {
