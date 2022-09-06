@@ -35,6 +35,18 @@ $(document).ready(function () {
     $(".mobile__control").removeClass("w-100");
   });
 });
+var swiper = new Swiper('.swiper-container', {
+  slidesPerView: 'auto',
+  speed: 1200,
+  spaceBetween: 0,
+  centeredSlides: true,
+  loop: true,
+  autoplay: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  }
+});
 $('.row').imagesLoaded().progress(function () {
   $('.row').masonry();
 }); //   <script>        
