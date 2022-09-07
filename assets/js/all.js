@@ -36,19 +36,31 @@ $(document).ready(function () {
   });
 });
 var swiper = new Swiper('.swiper-container', {
-  slidesPerView: 'auto',
-  speed: 1200,
-  spaceBetween: 0,
+  speed: 1600,
+  spaceBetween: 24,
   centeredSlides: true,
   loop: true,
-  autoplay: true,
+  autoplay: {
+    delay: 4000,
+    stopOnLastSlide: false
+  },
+  grabCursor: true,
+  breakpoints: {
+    992: {
+      slidesPerView: 1
+    },
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 24
+    }
+  },
   pagination: {
     el: '.swiper-pagination',
     clickable: true
   }
 });
-$('.row').imagesLoaded().progress(function () {
-  $('.row').masonry();
+$('#masonry').imagesLoaded().progress(function () {
+  $('#masonry').masonry();
 }); //   <script>        
 //   var mySwiper = new Swiper ('.swiper', {
 //     direction: 'vertical', // 垂直切换选项
