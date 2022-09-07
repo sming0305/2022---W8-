@@ -22,7 +22,7 @@
     }
 
     &:hover {
-        background-color: #E6553B;
+        background-color: #E6553B !important;
 
         &::before {
             border-right: 8px solid #000;

@@ -71,10 +71,10 @@
 
             .img__size--3--mask::before {
                 border: none;
-    
+
             }
 
-            .show{
+            .show {
                 display: block !important;
             }
         }
@@ -94,6 +94,39 @@
         .img__size--3--mask::before {
             content: "";
 
+        }
+    }
+}
+
+.Artwork__item {
+
+    .show {
+        transition: all 0.6s;
+    }
+
+    &:hover {
+
+        .show {
+            opacity: 1 !important;
+
+        }
+    }
+
+    &__image--size1 {
+        @include md {
+            height: 254px;
+        }
+    }
+
+    &__image--size2 {
+        @include md {
+            height: 327px;
+        }
+    }
+
+    &__image--size3 {
+        @include md {
+            height: 395px;
         }
     }
 }

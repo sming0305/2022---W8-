@@ -25,6 +25,12 @@
     }
 }
 
+.border-sm-bottom {
+    @include mobile-min {
+        border-bottom: 1px solid !important;
+    }
+}
+
 .border-xl-bottom {
     @include xl {
         border-bottom: 1px solid !important;
@@ -50,9 +56,15 @@
     }
 }
 
+.width-sm-auto {
+    @include mobile-min  {
+        width: auto !important;
+    }
+}
+
 .width-lg-auto {
     @include tablet-min {
-        width: auto;
+        width: auto !important;
     }
 }
 
@@ -61,6 +73,12 @@
     @include mobile-min {
         padding-top: 43px !important;
         padding-bottom: 43px !important;
+    }
+}
+
+.position-sm-initial {
+    @include mobile-min {
+        position: initial !important;
     }
 }
 
@@ -76,6 +94,11 @@
     }
 }
 
+.max-width-sm-307 {
+    @include mobile-min {
+        max-width: 307px !important;
+    }
+}
 
 .size-16 {
     width: 16px;

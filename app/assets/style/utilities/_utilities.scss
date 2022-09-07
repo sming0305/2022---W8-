@@ -176,171 +176,344 @@
 }
 
 
+
+@include mobile-min {
+    .fs-sm-1 {
+        font-size: $font-size-base*0.125;
+    }
+
+    .fs-sm-2 {
+        font-size: $font-size-base*0.25;
+    }
+
+    .fs-sm-3 {
+        font-size: $font-size-base*0.375;
+    }
+
+    .fs-sm-4 {
+        font-size: $font-size-base*0.5;
+    }
+
+    .fs-sm-5 {
+        font-size: $font-size-base*0.625;
+    }
+
+    .fs-sm-6 {
+        font-size: $font-size-base*0.75;
+    }
+
+    .fs-sm-7 {
+        font-size: $font-size-base*0.875;
+    }
+
+    .fs-sm-8 {
+        font-size: $font-size-base;
+    }
+
+    .fs-sm-9 {
+        font-size: $font-size-base*1.125;
+    }
+
+    .fs-sm-10 {
+        font-size: $font-size-base*1.25;
+    }
+
+    .fs-sm-11 {
+        font-size: $font-size-base*1.375;
+    }
+
+    .fs-sm-12 {
+        font-size: $font-size-base*1.5;
+    }
+
+    .fs-sm-13 {
+        font-size: $font-size-base*1.625;
+    }
+
+    .fs-sm-14 {
+        font-size: $font-size-base*1.75;
+    }
+
+    .fs-sm-15 {
+        font-size: $font-size-base*1.875;
+    }
+
+    .fs-sm-16 {
+        font-size: $font-size-base*2;
+    }
+
+    .fs-sm-17 {
+        font-size: $font-size-base*2.125;
+    }
+
+    .fs-sm-18 {
+        font-size: $font-size-base*2.25;
+    }
+
+    .fs-sm-19 {
+        font-size: $font-size-base*2.375;
+    }
+
+    .fs-sm-20 {
+        font-size: $font-size-base*2.5;
+    }
+
+    .fs-sm-21 {
+        font-size: $font-size-base*2.625;
+    }
+
+    .fs-sm-22 {
+        font-size: $font-size-base*2.75;
+    }
+
+    .fs-sm-23 {
+        font-size: $font-size-base*2.875;
+    }
+
+    .fs-sm-24 {
+        font-size: $font-size-base*3;
+    }
+
+    .fs-sm-25 {
+        font-size: $font-size-base*3.125;
+    }
+
+    .fs-sm-26 {
+        font-size: $font-size-base*3.25;
+    }
+
+    .fs-sm-27 {
+        font-size: $font-size-base*3.375;
+    }
+
+    .fs-sm-28 {
+        font-size: $font-size-base*3.5;
+    }
+
+    .fs-sm-29 {
+        font-size: $font-size-base*3.625;
+    }
+
+    .fs-sm-30 {
+        font-size: $font-size-base*3.75;
+    }
+
+    .fs-sm-31 {
+        font-size: $font-size-base*3.875;
+    }
+
+    .fs-sm-32 {
+        font-size: $font-size-base*4;
+    }
+
+    .fs-sm-33 {
+        font-size: $font-size-base*4.125;
+    }
+
+    .fs-sm-34 {
+        font-size: $font-size-base*4.25;
+    }
+
+    .fs-sm-35 {
+        font-size: $font-size-base*4.375;
+    }
+
+    .fs-sm-36 {
+        font-size: $font-size-base*4.5;
+    }
+
+    .fs-sm-37 {
+        font-size: $font-size-base*4.625;
+    }
+
+    .fs-sm-38 {
+        font-size: $font-size-base*4.75;
+    }
+
+    .fs-sm-39 {
+        font-size: $font-size-base*4.875;
+    }
+
+    .fs-sm-40 {
+        font-size: $font-size-base*5;
+    }
+
+    .fs-sm-41 {
+        font-size: $font-size-base*5.125;
+    }
+
+    .fs-sm-42 {
+        font-size: $font-size-base*5.25;
+    }
+}
+
+
+
 @include tablet-min {
     .fs-lg-1 {
         font-size: $font-size-base*0.125;
     }
-    
+
     .fs-lg-2 {
         font-size: $font-size-base*0.25;
     }
-    
+
     .fs-lg-3 {
         font-size: $font-size-base*0.375;
     }
-    
+
     .fs-lg-4 {
         font-size: $font-size-base*0.5;
     }
-    
+
     .fs-lg-5 {
         font-size: $font-size-base*0.625;
     }
-    
+
     .fs-lg-6 {
         font-size: $font-size-base*0.75;
     }
-    
+
     .fs-lg-7 {
         font-size: $font-size-base*0.875;
     }
-    
+
     .fs-lg-8 {
         font-size: $font-size-base;
     }
-    
+
     .fs-lg-9 {
         font-size: $font-size-base*1.125;
     }
-    
+
     .fs-lg-10 {
         font-size: $font-size-base*1.25;
     }
-    
+
     .fs-lg-11 {
         font-size: $font-size-base*1.375;
     }
-    
+
     .fs-lg-12 {
         font-size: $font-size-base*1.5;
     }
-    
+
     .fs-lg-13 {
         font-size: $font-size-base*1.625;
     }
-    
+
     .fs-lg-14 {
         font-size: $font-size-base*1.75;
     }
-    
+
     .fs-lg-15 {
         font-size: $font-size-base*1.875;
     }
-    
+
     .fs-lg-16 {
         font-size: $font-size-base*2;
     }
-    
+
     .fs-lg-17 {
         font-size: $font-size-base*2.125;
     }
-    
+
     .fs-lg-18 {
         font-size: $font-size-base*2.25;
     }
-    
+
     .fs-lg-19 {
         font-size: $font-size-base*2.375;
     }
-    
+
     .fs-lg-20 {
         font-size: $font-size-base*2.5;
     }
-    
+
     .fs-lg-21 {
         font-size: $font-size-base*2.625;
     }
-    
+
     .fs-lg-22 {
         font-size: $font-size-base*2.75;
     }
-    
+
     .fs-lg-23 {
         font-size: $font-size-base*2.875;
     }
-    
+
     .fs-lg-24 {
         font-size: $font-size-base*3;
     }
-    
+
     .fs-lg-25 {
         font-size: $font-size-base*3.125;
     }
-    
+
     .fs-lg-26 {
         font-size: $font-size-base*3.25;
     }
-    
+
     .fs-lg-27 {
         font-size: $font-size-base*3.375;
     }
-    
+
     .fs-lg-28 {
         font-size: $font-size-base*3.5;
     }
-    
+
     .fs-lg-29 {
         font-size: $font-size-base*3.625;
     }
-    
+
     .fs-lg-30 {
         font-size: $font-size-base*3.75;
     }
-    
+
     .fs-lg-31 {
         font-size: $font-size-base*3.875;
     }
-    
+
     .fs-lg-32 {
         font-size: $font-size-base*4;
     }
-    
+
     .fs-lg-33 {
         font-size: $font-size-base*4.125;
     }
-    
+
     .fs-lg-34 {
         font-size: $font-size-base*4.25;
     }
-    
+
     .fs-lg-35 {
         font-size: $font-size-base*4.375;
     }
-    
+
     .fs-lg-36 {
         font-size: $font-size-base*4.5;
     }
-    
+
     .fs-lg-37 {
         font-size: $font-size-base*4.625;
     }
-    
+
     .fs-lg-38 {
         font-size: $font-size-base*4.75;
     }
-    
+
     .fs-lg-39 {
         font-size: $font-size-base*4.875;
     }
-    
+
     .fs-lg-40 {
         font-size: $font-size-base*5;
     }
-    
+
     .fs-lg-41 {
         font-size: $font-size-base*5.125;
     }
-    
+
     .fs-lg-42 {
         font-size: $font-size-base*5.25;
     }
@@ -386,11 +559,15 @@
     line-height: 1.041;
 }
 
+.lh-80_85 {
+    line-height: 1.041;
+}
+
 .writing-mode-vertical-lr {
     writing-mode: vertical-lr;
 }
 
-.text-width-size-31{
+.text-width-size-31 {
     width: 30px;
 }
 
@@ -452,6 +629,27 @@
     opacity: 1 !important;
 }
 
+.opacity-85 {
+    opacity: 0.85 !important;
+}
+
+.opacity-70 {
+    opacity: 0.7 !important;
+}
+
+.opacity-50 {
+    opacity: 0.5 !important;
+}
+
+.opacity-0 {
+    opacity: 0 !important;
+}
+
+.background-color-rgba-opacity-70{
+    background-color:rgba(0,0,0,0.7) !important;
+}
+
+
 .height-min {
     height: min-content;
 }
@@ -460,13 +658,27 @@
     top: 50px;
 }
 
-.r-0{
- right: 0;
+.t-0 {
+    top: 0;
 }
 
-.b-0{
+.r-0 {
+    right: 0;
+}
+
+.b-0 {
     bottom: 0;
 }
+
+.b-z110 {
+    bottom: -110px;
+}
+
+.b-z140 {
+    bottom: -140px;
+}
+
+
 
 .z-18 {
     z-index: 18;

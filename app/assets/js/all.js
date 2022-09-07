@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
   $("#offcanvasButton").click(function (e) { 
     $(".offcanvas-backdrop").toggleClass("show");
@@ -39,12 +40,28 @@ $(document).ready(function () {
 });
 
 var swiper = new Swiper('.swiper-container', {
-  slidesPerView: 'auto',
-  speed:1200,
-  spaceBetween: 0,
+  speed: 1600,
+  spaceBetween: 24,
   centeredSlides: true,
   loop: true,
-  autoplay:true,
+  autoplay: {
+    delay: 4000,
+    stopOnLastSlide: false,
+    },
+  grabCursor: true,
+
+  breakpoints: { 
+
+    992: {
+      slidesPerView: 1,
+    },
+
+    1200: { 
+      slidesPerView: 3,
+      spaceBetween: 24
+    }
+  },
+
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -52,10 +69,10 @@ var swiper = new Swiper('.swiper-container', {
 });
 
 
-
-$('.row').imagesLoaded().progress( function() {
-  $('.row').masonry();
+$('#masonry').imagesLoaded().progress( function() {
+  $('#masonry').masonry(); 
 });
+
 
 
 
