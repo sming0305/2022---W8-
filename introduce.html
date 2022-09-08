@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>
+    ART NFT
+  </title>
+
+  <link rel="shortcut icon" href="./assets/images/sunrise.png" type="image/x-icon">
+
+  <meta name="description" content="ART-NFT,添加你的 NFT,最新藝術品,列出它們出售">
+  <meta name="keywords" content="ART-NFT,創建並出售你的藝術品,熱門藝術家,最新藝術品">
+
+  <meta name="og:description" content="ART-NFT,添加你的 NFT,最新藝術品,列出它們出售">
+  <meta name="og:title" content="ART-NFT--創建並出售你的藝術品">
+  <meta name="og:typr" content="website">
+  <meta name="og:url" content="#">
+  <meta name="og:img" content="#">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Paytone+One&family=Squada+One&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body class="d-flex flex-column">
+  <nav class="border-bottom border-primary fixed-top z-1060 bg-main">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between position-relative">
+        <h1 class="m-0  py-4 py-sm-8"><a href="index.html" class="logo d-lg-block">ART NFT</a></h1>
+        <ul class="list-unstyled d-lg-flex align-items-center d-none">
+          <li class="px-7 py-10 px-xl-12 border-start border-end border-primary">
+            <form action="index.html">
+              <input type="text" placeholder="搜尋作品名稱、藝術家名稱" class="bg-main border-none p-0 outline-none me-6"
+                style="width:288px">
+              <button type="submit" class="border-none p-0 btn--action"><i
+                  class="fa-solid fa-magnifying-glass fs--12"></i></button>
+            </form>
+          </li>
+          <li><a href="" class="px-7 py-10 px-xl-12 fw-bold border-end border-primary btn--action">探索</a></li>
+          <li><a href="" class="px-7 py-10 px-xl-12 fw-bold border-end border-primary btn--action">市值</a></li>
+          <li><a href="" class="ps-7 py-10 ps-xl-12 btn--action" data-bs-toggle="modal" data-bs-target="#linkWallet">
+              <i class="fa-solid fa-wallet"></i></a>
+          </li>
+        </ul>
+        <ul class="list-unstyled d-flex align-items-center mobile__control justify-content-between d-lg-none">
+          <li class="d-flex align-items-center justify-content-between w-100">
+            <ul class="list-unstyled d-none d-flex align-items-center justify-content-between search_grid">
+              <li class="lh-1">
+                <button class="border-none p-0 lh-1 me-4 btn--action search__closeButton"><i
+                    class="fa-solid fa-angle-left"></i></button>
+              </li>
+              <li>
+                <form action="index.html" class="lh-1">
+                  <input type="text" placeholder="搜尋作品名稱、藝術家名稱"
+                    class="bg-main border-none p-0 outline-none fs--7 lh-14_18">
+                </form>
+              </li>
+            </ul>
+            <button class="d-block d-lg-none border-none p-0 btn--action fs--10 me-6 mb-0_5 search__button">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </li>
+          <li>
+            <button class="d-block d-lg-none border-none p-0 btn--action fs--11 d-flex align-items-center" type="button"
+              id="offcanvasButton" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+              aria-controls="offcanvasTop">
+              <i class="fa-solid fa-bars mini__menu"></i>
+              <i class="fa-solid fa-xmark fs--14 d-none close__botton ms-0_5"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main class="border-bottom border-primary">
+
+    
+
+<section class="pt-6 pb-5 py-sm-10">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-7 col-xl-4 me-lg-z12">
+                <img src="./assets/images/artist01.jpg" alt="artist" class="artist__img">
+            </div>
+            <div class="col-12 col-lg-5 col-xl-3 g-lg-0 ps-lg-6 h-100 d-none d-lg-block d-xl-none">
+                <ul class="list-unstyled border border-black g-0">
+                    <li
+                        class="py-4 px-6 d-flex justify-content-between align-items-center border-bottom border-black bg-white">
+                        <p class="fw-bold lh-16_32">販售中</p>
+                        <span class="font-Squada fs--16 lh-1">168</span>
+                    </li>
+                    <li
+                        class="py-4 px-6 d-flex justify-content-between align-items-center border-bottom border-black bg-white">
+                        <p class="fw-bold lh-16_32">地板價格</p>
+                        <span class="font-Squada fs--16 lh-1">0.6 ETH</span>
+                    </li>
+                    <li
+                        class="py-4 px-6 d-flex justify-content-between align-items-center border-bottom border-black bg-white">
+                        <p class="fw-bold lh-16_32">7 日成交</p>
+                        <span class="font-Squada fs--16 lh-1">8.8 ETH</span>
+                    </li>
+                    <li class="py-4 px-6 d-flex justify-content-between align-items-center bg-white">
+                        <p class="fw-bold lh-16_32">30 日成交</p>
+                        <span class="font-Squada fs--16 lh-1">23.1 ETH</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-xl-5 g-xl-0 mt-0 mt-lg-1 mt-xl-0 mb-4 mb-lg-0">
+                <div
+                    class="py-6 px-4 pb-md-8 px-md-6 d-flex flex-column justify-content-between h-100 border border-black bg-white">
+                    <div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h2 class="fs--16 fs-lg-24 lh-32_34 font-Squada m-0">Michael</h2>
+                            <div>
+                                <a href="#" class="btn--action d-inline"><i class="fa-brands fa-discord me-1"></i></a>
+                                <a href="#" class="btn--action d-inline"><i
+                                        class="fa-brands fa-facebook-f me-1"></i></a>
+                                <a href="#" class="btn--action d-inline"><i class="fa-solid fa-globe me-1"></i></a>
+                                <a href="#" class="btn--action d-inline"><i class="fa-brands fa-twitter"></i></a>
+                            </div>
+                        </div>
+                        <p class="fs--8 lh-16_17 d-block mt-2 mt-lg-4 mb-6 font-Squada">0x3ya666…88ef</p>
+                    </div>
+                    <p>Michael自小在山林長大，能夠與花草樹木大自然進行靈體溝通，創作題材常見大山、大水、花草與樹木，從日常生活出發，擁有個⼈獨樹⼀格的創作風格，作品觸及靈魂深處、探索未知宇宙，透過與大自然的溝通，探討著存在的本質。​
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-5 col-xl-3 g-lg-0 ps-lg-6 h-100 d-block d-lg-none d-xl-block">
+                <ul class="list-unstyled border border-black g-0">
+                    <li
+                        class="py-4 px-6 d-flex justify-content-between align-items-center border-bottom border-black bg-white">
+                        <p class="fw-bold lh-16_32">販售中</p>
+                        <span class="font-Squada fs--16 lh-1">168</span>
+                    </li>
+                    <li
+                        class="py-4 px-6 d-flex justify-content-between align-items-center border-bottom border-black bg-white">
+                        <p class="fw-bold lh-16_32">地板價格</p>
+                        <span class="font-Squada fs--16 lh-1">0.6 ETH</span>
+                    </li>
+                    <li
+                        class="py-4 px-6 d-flex justify-content-between align-items-center border-bottom border-black bg-white">
+                        <p class="fw-bold lh-16_32">7 日成交</p>
+                        <span class="font-Squada fs--16 lh-1">8.8 ETH</span>
+                    </li>
+                    <li class="py-4 px-6 d-flex justify-content-between align-items-center bg-white">
+                        <p class="fw-bold lh-16_32">30 日成交</p>
+                        <span class="font-Squada fs--16 lh-1">23.1 ETH</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="pt-5 pb-10 py-sm-10">
+    <div class="container">
+        <ul class="nav nav-tabs mb-6 mb-lg-10" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active py-4 px-4 px-lg-12" id="ArtWorks-tab" data-bs-toggle="tab"
+                    data-bs-target="#ArtWorks" type="button" role="tab" aria-controls="ArtWorks" aria-selected="true">
+                    <h3 class="font-Squada fs--16 fs-lg-24 lh-48_50 m-0">Art Works<span
+                            class="d-none d-lg-inline-block fw-bold fs--10 lh-20_26 ms-4">系列作品</span></h3>
+                </a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link py-4 px-4 px-lg-12" id="Collection-tab" data-bs-toggle="tab"
+                    data-bs-target="#Collection" type="button" role="tab" aria-controls="Collection"
+                    aria-selected="false">
+                    <h3 class="font-Squada fs--16 fs-lg-24 lh-48_50 m-0">Collection<span
+                            class="d-none d-lg-inline-block fw-bold fs--10 lh-20_26 ms-4">收藏品</span></h3>
+                </a>
+            </li>
+        </ul>
+
+
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="ArtWorks" role="tabpanel" aria-labelledby="ArtWorks-tab">
+                <div class="introduce">
+                    <div class="row">
+                        <div class="col-12 col-xl-10 offset-1">
+                            <div class="pt-8 pt-lg-12">
+                                <h3 class="fs--12 lh-24_35 fw-bold mb-4">追求者送我的花</h3>
+                                <div class="row d-flex justify-content-between align-items-end mb-lg-12 mb-6">
+                                    <div class="col-10">
+                                        <p>我又沒有特別喜歡花，為什麼不給我現金就好，擺在那也不知道要幹嘛，只好畫起來看有沒有人要買，阿不然如果真的喜歡我，把這些都買回去八。</p>
+                                    </div>
+                                    <div class="col-2 d-flex justify-content-end"><button type="button"
+                                            class="button-type1">MORE</button></div>
+                                </div>
+                                <ul class="row list-unstyled gx-2">
+                                    <li class="col-12 col-xl-3 col-lg-6">
+                                        <div class="p-2 bg-black"><img
+                                                src="./assets/images/the-new-york-public-library-vBejyCBXZBY-unsplash.jpg"
+                                                alt="art" class="introduce__img"></div>
+                                    </li>
+                                    <li class="col-12 col-xl-3 col-lg-6">
+                                        <div class="p-2 bg-black"><img src="./assets/images/art30.jpg" alt="art" class="introduce__img"></div>
+                                    </li>
+                                    <li class="col-12 col-xl-3 col-lg-6">
+                                        <div class="p-2 bg-black"><img src="./assets/images/art14.jpg" alt="art" class="introduce__img"></div>
+                                    </li>
+                                    <li class="col-12 col-xl-3 col-lg-6">
+                                        <div class="p-2 bg-black"><img src="./assets/images/art29.jpg" alt="art" class="introduce__img"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="tab-pane fade" id="Collection" role="tabpanel" aria-labelledby="Collection-tab">
+                1
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+</section>
+
+  </main>
+  <footer class="border-top border-primary border-4 mt-2">
+    <div class="container">
+      <div class="d-flex justify-content-center p-6">
+        <p>© ART NFT. All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Wallet-Modal -->
+  <div class="modal fade" id="linkWallet" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-0 vh-100 h-sm-auto">
+        <div class="modal-header border-primary justify-content-center d-sm-block position-relative">
+          <h5 class="modal-title lh-20_29 fw-normal text-center">連結你的錢包</h5>
+          <button type="button" class="btn-close d-sm-none ms-0 size-14 p-0 position-absolute opacity-100"
+            data-bs-dismiss="modal" aria-label="Close" style="right: 24px"></button>
+        </div>
+        <div class="modal-body py-6 px-3 p-sm-4">
+          <ul class="row list-unstyled g-2">
+            <li class="col-12 col-sm-6 lh-1"><a href="#"
+                class="d-flex align-items-center justify-content-between p-4 border border-primary mb--z1 me--z1 font-Squada wallet_botton">
+                <div class="d-flex align-items-center"><img src="./assets/images/logo/connect01.png" alt="MetaMask"
+                    class="size-16 me-4">MetaMask</div><i class="fa-solid fa-check size-12 mb-1 fade check-icon"></i>
+              </a></li>
+            <li class="col-12 col-sm-6 lh-1"><a href="#"
+                class="d-flex align-items-center justify-content-between p-4 border border-primary mb--z1 me--z1 font-Squada wallet_botton">
+                <div class="d-flex align-items-center"><img src="./assets/images/logo/connect02.png"
+                    alt="Coinbase Wallet" class="size-16 me-4">Coinbase Wallet</div><i
+                  class="fa-solid fa-check size-12 mb-1  fade check-icon"></i>
+              </a></li>
+            <li class="col-12 col-sm-6 lh-1"><a href="#"
+                class="d-flex align-items-center justify-content-between p-4 border border-primary mb--z1 me--z1 font-Squada wallet_botton">
+                <div class="d-flex align-items-center"><img src="./assets/images/logo/connect03.png" alt="WalletConnect"
+                    class="size-16 me-4">WalletConnect</div><i
+                  class="fa-solid fa-check size-12 mb-1  fade check-icon"></i>
+              </a></li>
+            <li class="col-12 col-sm-6 lh-1"><a href="#"
+                class="d-flex align-items-center justify-content-between p-4 border border-primary mb--z1 me--z1 font-Squada wallet_botton">
+                <div class="d-flex align-items-center"><img src="./assets/images/logo/connect04.png" alt="Phantom"
+                    class="size-16 me-4">Phantom</div><i class="fa-solid fa-check size-12 mb-1  fade check-icon"></i>
+              </a></li>
+            <li class="col-12 col-sm-6 lh-1"><a href="#"
+                class="d-flex align-items-center justify-content-between p-4 border border-primary mb--z1 me--z1 font-Squada wallet_botton">
+                <div class="d-flex align-items-center"><img src="./assets/images/logo/connect05.png" alt="Glow"
+                    class="size-16 me-4">Glow</div><i class="fa-solid fa-check size-12 mb-1  fade check-icon"></i>
+              </a></li>
+            <li class="col-12 col-sm-6 lh-1"><a href="#"
+                class="d-flex align-items-center justify-content-between p-4 border border-primary mb--z1 me--z1 font-Squada wallet_botton">
+                <div class="d-flex align-items-center"><img src="./assets/images/logo/connect06.png" alt="Fortmatic"
+                    class="size-16 me-4">Fortmatic</div><i class="fa-solid fa-check size-12 mb-1  fade check-icon"></i>
+              </a></li>
+          </ul>
+        </div>
+        <div class="d-grid border-none d-sm-flex justify-content-sm-center px-0 py-0 p-sm-3">
+          <button type="button" class="btn btn-secondary text-white rounded-0 border border-primary m-0"
+            data-bs-dismiss="modal">連結錢包</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Offcanvas -->
+  <div class="offcanvas offcanvas-top top_50 top-sm-104 d-lg-none height-min pb-6" tabindex="-1" id="offcanvasTop"
+    aria-labelledby="offcanvasTopLabel" data-bs-backdrop="false">
+    <ul class="list-unstyled offcanvas-body text-center px-3 py-0">
+      <li><a href="" class="fs--9 lh-18_26 fw-bold py-6 border-bottom border-primary border-2">探索</a></li>
+      <li><a href="" class="fs--9 lh-18_26 fw-bold py-6">市值</a></li>
+      <li class="d-grid"><button
+          class="btn btn-secondary rounded-0 border border-primary text-white fs--9 lh-18_26 py-3"
+          data-bs-toggle="modal" data-bs-target="#linkWallet">連結錢包</button></li>
+    </ul>
+  </div>
+  <div class="offcanvas-backdrop fade"></div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>

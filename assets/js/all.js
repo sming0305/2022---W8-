@@ -59,8 +59,8 @@ var swiper = new Swiper('.swiper-container', {
     clickable: true
   }
 });
-$('#masonry').imagesLoaded().progress(function () {
-  $('#masonry').masonry();
+$('.masonry').imagesLoaded().progress(function () {
+  $('.masonry').masonry();
 }); //   <script>        
 //   var mySwiper = new Swiper ('.swiper', {
 //     direction: 'vertical', // 垂直切换选项
