@@ -37,6 +37,12 @@
     }
 }
 
+.fw-sm-bold{
+    @include mobile-min{
+        font-weight: bold;
+    }
+}
+
 
 .max-height-xl-329 {
     @include xl {

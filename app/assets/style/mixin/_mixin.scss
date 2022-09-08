@@ -22,6 +22,12 @@
     }
 }
 
+@mixin xxl {
+    @media (min-width: 1440px) {
+        @content;
+    }
+}
+
 
 @mixin imgReplaceText ($url, $width, $height) {
     background-image: url($url);

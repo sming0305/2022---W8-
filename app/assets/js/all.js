@@ -69,8 +69,8 @@ var swiper = new Swiper('.swiper-container', {
 });
 
 
-$('#masonry').imagesLoaded().progress( function() {
-  $('#masonry').masonry(); 
+$('.masonry').imagesLoaded().progress( function() {
+  $('.masonry').masonry(); 
 });
 
 

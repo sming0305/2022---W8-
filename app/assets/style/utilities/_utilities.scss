@@ -531,6 +531,10 @@
     line-height: 1.062;
 }
 
+.lh-16_32 {
+    line-height: 2;
+}
+
 .lh-18_19 {
     line-height: 1.055;
 }
@@ -549,6 +553,10 @@
 
 .lh-24_35 {
     line-height: 1.458;
+}
+
+.lh-32_34 {
+    line-height: 1.062;
 }
 
 .lh-32_45 {
@@ -572,7 +580,9 @@
 }
 
 
-
+.m--z1{
+    margin: -1px;
+}
 
 .mt--z1 {
     margin-top: -1px !important;
@@ -590,7 +600,25 @@
     margin-left: -1px !important;
 }
 
+@include tablet-min{
 
+.mt-lg-z12 {
+    margin-top: -12px !important;
+}
+
+.mb-lg-z12 {
+    margin-bottom: -12px !important;
+}
+
+.me-lg-z12 {
+    margin-right: -12px !important;
+}
+
+.ms-lg-z12 {
+    margin-left: -12px !important;
+}
+
+}
 
 
 .object-fit-contain {

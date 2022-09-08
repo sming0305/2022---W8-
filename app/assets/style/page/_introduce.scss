@@ -1,0 +1,20 @@
+.artist__img {
+    width: 100%;
+
+    @include xl {
+        height: 262px;
+    }
+}
+
+.introduce {
+
+    &__img {
+        width: 100%;
+        height: 383px;
+
+        @include tablet-min {
+            height: 270px;
+        }
+    }
+
+}
