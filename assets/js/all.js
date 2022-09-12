@@ -34,15 +34,28 @@ $(document).ready(function () {
     $(".logo").removeClass("d-none");
     $(".mobile__control").removeClass("w-100");
   });
-});
-var swiper = new Swiper('.swiper-container', {
+}); // 如果要使用瀑布流 + according，開合會取不到高度，introduce-detal.html這頁先不用瀑布流
+// 同學:Will Wu 解法，先做紀錄，後續再理解
+// https://letcla0624.github.io/hexLayoutWeek8/art-intro.html
+// https://github.com/letcla0624/hexLayoutWeek8/blob/main/app/assets/js/all.js
+// const accordionButtons = document.querySelectorAll(".grid-masonry .accordion");
+// accordionButtons.forEach(function (e) {
+//   ["hidden.bs.collapse", "shown.bs.collapse"].forEach(function (item) {
+//     e.addEventListener(item, () => {
+//       masonry();
+//     });
+//   });
+// });
+
+var swiper = new Swiper('.swiper-container-1', {
   speed: 1600,
   spaceBetween: 24,
   centeredSlides: true,
   loop: true,
   autoplay: {
     delay: 4000,
-    stopOnLastSlide: false
+    stopOnLastSlide: false,
+    disableOnInteraction: false
   },
   grabCursor: true,
   breakpoints: {
@@ -59,25 +72,31 @@ var swiper = new Swiper('.swiper-container', {
     clickable: true
   }
 });
+var swiper = new Swiper('.swiper-container-2', {
+  slidesPerView: 2,
+  speed: 1600,
+  spaceBetween: 24,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    stopOnLastSlide: false,
+    disableOnInteraction: false
+  },
+  breakpoints: {
+    992: {
+      slidesPerView: 3
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 24
+    }
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  }
+});
 $('.masonry').imagesLoaded().progress(function () {
   $('.masonry').masonry();
-}); //   <script>        
-//   var mySwiper = new Swiper ('.swiper', {
-//     direction: 'vertical', // 垂直切换选项
-//     loop: true, // 循环模式选项
-//     // 如果需要分页器
-//     pagination: {
-//       el: '.swiper-pagination',
-//     },
-//     // 如果需要前进后退按钮
-//     navigation: {
-//       nextEl: '.swiper-button-next',
-//       prevEl: '.swiper-button-prev',
-//     },
-//     // 如果需要滚动条
-//     scrollbar: {
-//       el: '.swiper-scrollbar',
-//     },
-//   })        
-//   </script>
+});
 //# sourceMappingURL=all.js.map

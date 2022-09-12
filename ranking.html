@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>
+    ART NFT
+  </title>
+
+  <link rel="shortcut icon" href="./assets/images/sunrise.png" type="image/x-icon">
+
+  <meta name="description" content="ART-NFT,添加你的 NFT,最新藝術品,列出它們出售">
+  <meta name="keywords" content="ART-NFT,創建並出售你的藝術品,熱門藝術家,最新藝術品">
+
+  <meta name="og:description" content="ART-NFT,添加你的 NFT,最新藝術品,列出它們出售">
+  <meta name="og:title" content="ART-NFT--創建並出售你的藝術品">
+  <meta name="og:typr" content="website">
+  <meta name="og:url" content="#">
+  <meta name="og:img" content="#">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Paytone+One&family=Squada+One&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body class="d-flex flex-column">
+  <nav class="border-bottom border-primary fixed-top z-1060 bg-main">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between position-relative">
+        <h1 class="m-0  py-4 py-sm-8"><a href="index.html" class="logo d-lg-block">ART NFT</a></h1>
+        <ul class="list-unstyled d-lg-flex align-items-center d-none">
+          <li class="px-7 py-10 px-xl-12 border-start border-end border-primary">
+            <form action="index.html">
+              <input type="text" placeholder="搜尋作品名稱、藝術家名稱" class="bg-main border-none p-0 outline-none me-6"
+                style="width:288px">
+              <button type="submit" class="border-none p-0 btn--action"><i
+                  class="fa-solid fa-magnifying-glass fs--12"></i></button>
+            </form>
+          </li>
+          <li><a href="explore.html" class="px-7 py-10 px-xl-12 fw-bold border-end border-primary btn--action">探索</a></li>
+          <li><a href="ranking.html" class="px-7 py-10 px-xl-12 fw-bold border-end border-primary btn--action">市值</a></li>
+          <li><a href="#" class="ps-7 py-10 ps-xl-12 btn--action" data-bs-toggle="modal" data-bs-target="#linkWallet">
+              <i class="fa-solid fa-wallet"></i></a>
+          </li>
+        </ul>
+        <ul class="list-unstyled d-flex align-items-center mobile__control justify-content-between d-lg-none">
+          <li class="d-flex align-items-center justify-content-between w-100">
+            <ul class="list-unstyled d-none d-flex align-items-center justify-content-between search_grid">
+              <li class="lh-1">
+                <button class="border-none p-0 lh-1 me-4 btn--action search__closeButton"><i
+                    class="fa-solid fa-angle-left"></i></button>
+              </li>
+              <li>
+                <form action="index.html" class="lh-1">
+                  <input type="text" placeholder="搜尋作品名稱、藝術家名稱"
+                    class="bg-main border-none p-0 outline-none fs--7 lh-14_18">
+                </form>
+              </li>
+            </ul>
+            <button class="d-block d-lg-none border-none p-0 btn--action fs--10 me-6 mb-0_5 search__button">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </li>
+          <li>
+            <button class="d-block d-lg-none border-none p-0 btn--action fs--11 d-flex align-items-center" type="button"
+              id="offcanvasButton" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+              aria-controls="offcanvasTop">
+              <i class="fa-solid fa-bars mini__menu"></i>
+              <i class="fa-solid fa-xmark fs--14 d-none close__botton ms-0_5"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main class="border-bottom border-primary">
+
+    
+<section class="pt-6 pb-10 pt-lg-10 pb-lg-20">
+    <div class="container">
+        <h2 class="fw-bold fs--16 fs-lg-24 lh-48_70 text-center mb-4 mb-lg-6">市價排行榜</h2>
+        <p class="text-center mb-8 mb-lg-12">NFT系列藝術作品排行榜！全球注目指標</p>
+
+        <ul class="list-unstyled">
+            <li class="d-none d-md-block">
+                <div class="py-4 pe-2 pe-md-6 d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center justify-content-between w-lg-47_6">
+                        <p class="ps-16">系列作品名稱</p>
+                        <p>價值</p>
+                    </div>
+                    <ul class="list-unstyled d-flex w-lg-52 justify-content-end">
+                        <li class="text-end w-20">24h%</li>
+                        <li class="text-end w-20">7d%</li>
+                        <li class="text-end w-20">地板價</li>
+                        <li class="text-end w-20">擁有者</li>
+                        <li class="text-end w-20">作品數量</li>
+                    </ul>
+                </div>
+            </li>
+            <li
+                class="d-md-flex align-items-center justify-content-between pe-md-6 border border-black bg-white accordion-item mb--z1">
+                <a class="d-flex w-lg-47_6 accordion-header pe-2 pe-lg-0 position-relative collapsed" id="heading__1"
+                    data-bs-toggle="collapse" data-bs-target="#collapse__1" aria-expanded="true"
+                    aria-controls="collapse__1">
+                    <div class="triangle"></div>
+                    <p
+                        class="font-Paytone fs--12 lh-1 number__size justify-content-center d-flex align-items-center flex-shrink-1 py-6 border-end border-black">
+                        1</p>
+                    <div class="d-flex align-items-center justify-content-between w-100">
+                        <div class="d-flex px-2 ps-lg-4 pe-lg-0 align-items-center">
+                            <img src="./assets/images/art29.jpg" alt="art" class="rounded-circle size-48 me-2 me-lg-4">
+                            <h3 class="fs--8  m-0">追求者送我的花</h3>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fa-brands fa-ethereum me-2"></i>
+                            <p class="font-Squada fs--10 lh-20_32">1,774.19</p>
+                        </div>
+                    </div>
+                </a>
+                <ul class="list-unstyled w-lg-52 collapse d-md-block border-md-none border-top border-black"
+                    id="collapse__1">
+                    <li class="p-4 p-md-0">
+                        <ul class="list-unstyled d-flex font-Squada fs--10 lh-20_32 text-center text-md-end flex-wrap">
+                            <li class="text-success w-md-20 w-33">
+                                <p class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">24h%</p>+220.49%
+                            </li>
+                            <li class="text-danger w-md-20 w-33 mb-4 mb-md-0">
+                                <p class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">7d%</p>-2.43%
+                            </li>
+                            <li class="w-md-20 w-33">
+                                <span class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">地板價</span>
+                                <div class="d-flex align-items-center justify-content-md-end justify-content-center">
+                                    <i class="fa-brands fa-ethereum me-2 fs--8"></i>
+                                    <p class="font-Squada fs--10 lh-20_32">2.90</p>
+                                </div>
+                            </li>
+                            <li class="w-md-20 w-50">
+                                <p class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">擁有者</p>32.1K
+                            </li>
+                            <li class="w-md-20 w-50">
+                                <p class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">作品數量</p>1000
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li
+                class="d-md-flex align-items-center justify-content-between pe-md-6 border border-black bg-white accordion-item mb--z1">
+                <a class="d-flex w-lg-47_6 accordion-header pe-2 pe-lg-0 position-relative collapsed" id="heading__2"
+                    data-bs-toggle="collapse" data-bs-target="#collapse__2" aria-expanded="true"
+                    aria-controls="collapse__2">
+                    <div class="triangle"></div>
+                    <p
+                        class="font-Paytone fs--12 lh-1 number__size justify-content-center d-flex align-items-center flex-shrink-1 py-6 border-end border-black">
+                        2</p>
+                    <div class="d-flex align-items-center justify-content-between w-100">
+                        <div class="d-flex px-2 ps-lg-4 pe-lg-0 align-items-center">
+                            <img src="./assets/images/art06.jpg" alt="art" class="rounded-circle size-48 me-2 me-lg-4">
+                            <h3 class="fs--8  m-0">夏天的時候</h3>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fa-brands fa-ethereum me-2"></i>
+                            <p class="font-Squada fs--10 lh-20_32">1,524.89</p>
+                        </div>
+                    </div>
+                </a>
+                <ul class="list-unstyled w-lg-52 collapse d-md-block border-md-none border-top border-black"
+                    id="collapse__2">
+                    <li class="p-4 p-md-0">
+                        <ul class="list-unstyled d-flex font-Squada fs--10 lh-20_32 text-center text-md-end flex-wrap">
+                            <li class="text-success w-md-20 w-33">
+                                <p class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">24h%</p>+80.49%
+                            </li>
+                            <li class="text-danger w-md-20 w-33 mb-4 mb-md-0">
+                                <p class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">7d%</p>-2.43%
+                            </li>
+                            <li class="w-md-20 w-33">
+                                <span class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">地板價</span>
+                                <div class="d-flex align-items-center justify-content-md-end justify-content-center">
+                                    <i class="fa-brands fa-ethereum me-2 fs--8"></i>
+                                    <p class="font-Squada fs--10 lh-20_32">90.23</p>
+                                </div>
+                            </li>
+                            <li class="w-md-20 w-50">
+                                <p class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">擁有者</p>32.1K
+                            </li>
+                            <li class="w-md-20 w-50">
+                                <p class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">作品數量</p>1000
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li
+                class="d-md-flex align-items-center justify-content-between pe-md-6 border border-black bg-white accordion-item mb--z1">
+                <a class="d-flex w-lg-47_6 accordion-header pe-2 pe-lg-0 position-relative collapsed" id="heading__3"
+                    data-bs-toggle="collapse" data-bs-target="#collapse__3" aria-expanded="true"
+                    aria-controls="collapse__3">
+                    <div class="triangle"></div>
+                    <p
+                        class="font-Paytone fs--12 lh-1 number__size justify-content-center d-flex align-items-center flex-shrink-1 py-6 border-end border-black">
+                        3</p>
+                    <div class="d-flex align-items-center justify-content-between w-100">
+                        <div class="d-flex px-2 ps-lg-4 pe-lg-0 align-items-center">
+                            <img src="./assets/images/art02.jpg" alt="art" class="rounded-circle size-48 me-2 me-lg-4">
+                            <h3 class="fs--8  m-0">海洋波度</h3>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fa-brands fa-ethereum me-2"></i>
+                            <p class="font-Squada fs--10 lh-20_32">1,400.59</p>
+                        </div>
+                    </div>
+                </a>
+                <ul class="list-unstyled w-lg-52 collapse d-md-block border-md-none border-top border-black"
+                    id="collapse__3">
+                    <li class="p-4 p-md-0">
+                        <ul class="list-unstyled d-flex font-Squada fs--10 lh-20_32 text-center text-md-end flex-wrap">
+                            <li class="text-danger w-md-20 w-33">
+                                <p class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">24h%</p>-3.92%
+                            </li>
+                            <li class="text-danger w-md-20 w-33 mb-4 mb-md-0">
+                                <p class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">7d%</p>-13.43%
+                            </li>
+                            <li class="w-md-20 w-33">
+                                <span class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">地板價</span>
+                                <div class="d-flex align-items-center justify-content-md-end justify-content-center">
+                                    <i class="fa-brands fa-ethereum me-2 fs--8"></i>
+                                    <p class="font-Squada fs--10 lh-20_32">2.90</p>
+                                </div>
+                            </li>
+                            <li class="w-md-20 w-50">
+                                <p class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">擁有者</p>32.1K
+                            </li>
+                            <li class="w-md-20 w-50">
+                                <p class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">作品數量</p>1000
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li
+                class="d-md-flex align-items-center justify-content-between pe-md-6 border border-black bg-white accordion-item mb--z1">
+                <a class="d-flex w-lg-47_6 accordion-header pe-2 pe-lg-0 position-relative collapsed" id="heading__4"
+                    data-bs-toggle="collapse" data-bs-target="#collapse__4" aria-expanded="true"
+                    aria-controls="collapse__4">
+                    <div class="triangle"></div>
+                    <p
+                        class="font-Paytone fs--12 lh-1 number__size justify-content-center d-flex align-items-center flex-shrink-1 py-6 border-end border-black">
+                        4</p>
+                    <div class="d-flex align-items-center justify-content-between w-100">
+                        <div class="d-flex px-2 ps-lg-4 pe-lg-0 align-items-center">
+                            <img src="./assets/images/art03.jpg" alt="art" class="rounded-circle size-48 me-2 me-lg-4">
+                            <h3 class="fs--8  m-0">賴床真的很不好</h3>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fa-brands fa-ethereum me-2"></i>
+                            <p class="font-Squada fs--10 lh-20_32">1,224.88</p>
+                        </div>
+                    </div>
+                </a>
+                <ul class="list-unstyled w-lg-52 collapse d-md-block border-md-none border-top border-black"
+                    id="collapse__4">
+                    <li class="p-4 p-md-0">
+                        <ul class="list-unstyled d-flex font-Squada fs--10 lh-20_32 text-center text-md-end flex-wrap">
+                            <li class="text-danger w-md-20 w-33">
+                                <p class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">24h%</p>-9.23%
+                            </li>
+                            <li class="text-danger w-md-20 w-33 mb-4 mb-md-0">
+                                <p class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">7d%</p>-20.43%
+                            </li>
+                            <li class="w-md-20 w-33">
+                                <span class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">地板價</span>
+                                <div class="d-flex align-items-center justify-content-md-end justify-content-center">
+                                    <i class="fa-brands fa-ethereum me-2 fs--8"></i>
+                                    <p class="font-Squada fs--10 lh-20_32">2.90</p>
+                                </div>
+                            </li>
+                            <li class="w-md-20 w-50">
+                                <p class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">擁有者</p>32.1K
+                            </li>
+                            <li class="w-md-20 w-50">
+                                <p class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">作品數量</p>1000
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li
+                class="d-md-flex align-items-center justify-content-between pe-md-6 border border-black bg-white accordion-item mb--z1">
+                <a class="d-flex w-lg-47_6 accordion-header pe-2 pe-lg-0 position-relative collapsed" id="heading__6"
+                    data-bs-toggle="collapse" data-bs-target="#collapse__5" aria-expanded="true"
+                    aria-controls="collapse__5">
+                    <div class="triangle"></div>
+                    <p
+                        class="font-Paytone fs--12 lh-1 number__size justify-content-center d-flex align-items-center flex-shrink-1 py-6 border-end border-black">
+                        5</p>
+                    <div class="d-flex align-items-center justify-content-between w-100">
+                        <div class="d-flex px-2 ps-lg-4 pe-lg-0 align-items-center">
+                            <img src="./assets/images/art01.jpg" alt="art" class="rounded-circle size-48 me-2 me-lg-4">
+                            <h3 class="fs--8  m-0">瞳孔:流動的脈絡</h3>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fa-brands fa-ethereum me-2"></i>
+                            <p class="font-Squada fs--10 lh-20_32">1,021.09</p>
+                        </div>
+                    </div>
+                </a>
+                <ul class="list-unstyled w-lg-52 collapse d-md-block border-md-none border-top border-black"
+                    id="collapse__5">
+                    <li class="p-4 p-md-0">
+                        <ul class="list-unstyled d-flex font-Squada fs--10 lh-20_32 text-center text-md-end flex-wrap">
+                            <li class="text-success w-md-20 w-33">
+                                <p class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">24h%</p>+83.49%
+                            </li>
+                            <li class="text-danger w-md-20 w-33 mb-4 mb-md-0">
+                                <p class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">7d%</p>-1.43%
+                            </li>
+                            <li class="w-md-20 w-33">
+                                <span class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">地板價</span>
+                                <div class="d-flex align-items-center justify-content-md-end justify-content-center">
+                                    <i class="fa-brands fa-ethereum me-2 fs--8"></i>
+                                    <p class="font-Squada fs--10 lh-20_32">2.90</p>
+                                </div>
+                            </li>
+                            <li class="w-md-20 w-50">
+                                <p class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">擁有者</p>32.1K
+                            </li>
+                            <li class="w-md-20 w-50">
+                                <p class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">作品數量</p>1000
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li
+                class="d-md-flex align-items-center justify-content-between pe-md-6 border border-black bg-white accordion-item mb--z1">
+                <a class="d-flex w-lg-47_6 accordion-header pe-2 pe-lg-0 position-relative collapsed" id="heading__6"
+                    data-bs-toggle="collapse" data-bs-target="#collapse__6" aria-expanded="true"
+                    aria-controls="collapse__6">
+                    <div class="triangle"></div>
+                    <p
+                        class="font-Paytone fs--12 lh-1 number__size justify-content-center d-flex align-items-center flex-shrink-1 py-6 border-end border-black">
+                        6</p>
+                    <div class="d-flex align-items-center justify-content-between w-100">
+                        <div class="d-flex px-2 ps-lg-4 pe-lg-0 align-items-center">
+                            <img src="./assets/images/art12.jpg" alt="art" class="rounded-circle size-48 me-2 me-lg-4">
+                            <h3 class="fs--8  m-0">哭泣的時候</h3>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fa-brands fa-ethereum me-2"></i>
+                            <p class="font-Squada fs--10 lh-20_32">921.42</p>
+                        </div>
+                    </div>
+                </a>
+                <ul class="list-unstyled w-lg-52 collapse d-md-block border-md-none border-top border-black"
+                    id="collapse__6">
+                    <li class="p-4 p-md-0">
+                        <ul class="list-unstyled d-flex font-Squada fs--10 lh-20_32 text-center text-md-end flex-wrap">
+                            <li class="text-danger w-md-20 w-33">
+                                <p class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">24h%</p>-9.43%
+                            </li>
+                            <li class="text-success w-md-20 w-33 mb-4 mb-md-0">
+                                <p class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">7d%</p>+183.49%
+                            </li>
+                            <li class="w-md-20 w-33">
+                                <span class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">地板價</span>
+                                <div class="d-flex align-items-center justify-content-md-end justify-content-center">
+                                    <i class="fa-brands fa-ethereum me-2 fs--8"></i>
+                                    <p class="font-Squada fs--10 lh-20_32">2.90</p>
+                                </div>
+                            </li>
+                            <li class="w-md-20 w-50">
+                                <p class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">擁有者</p>32.1K
+                            </li>
+                            <li class="w-md-20 w-50">
+                                <p class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">作品數量</p>1000
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li
+                class="d-md-flex align-items-center justify-content-between pe-md-6 border border-black bg-white accordion-item mb--z1">
+                <a class="d-flex w-lg-47_6 accordion-header pe-2 pe-lg-0 position-relative collapsed" id="heading__7"
+                    data-bs-toggle="collapse" data-bs-target="#collapse__7" aria-expanded="true"
+                    aria-controls="collapse__7">
+                    <div class="triangle"></div>
+                    <p
+                        class="font-Paytone fs--12 lh-1 number__size justify-content-center d-flex align-items-center flex-shrink-1 py-6 border-end border-black">
+                        7</p>
+                    <div class="d-flex align-items-center justify-content-between w-100">
+                        <div class="d-flex px-2 ps-lg-4 pe-lg-0 align-items-center">
+                            <img src="./assets/images/art14.jpg" alt="art" class="rounded-circle size-48 me-2 me-lg-4">
+                            <h3 class="fs--8  m-0">破碎的菠蘿麵包</h3>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fa-brands fa-ethereum me-2"></i>
+                            <p class="font-Squada fs--10 lh-20_32">888.88</p>
+                        </div>
+                    </div>
+                </a>
+                <ul class="list-unstyled w-lg-52 collapse d-md-block border-md-none border-top border-black"
+                    id="collapse__7">
+                    <li class="p-4 p-md-0">
+                        <ul class="list-unstyled d-flex font-Squada fs--10 lh-20_32 text-center text-md-end flex-wrap">
+                            <li class="text-success w-md-20 w-33">
+                                <p class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">24h%</p>+20.49%
+                            </li>
+                            <li class="text-danger w-md-20 w-33 mb-4 mb-md-0">
+                                <p class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">7d%</p>-0.43%
+                            </li>
+                            <li class="w-md-20 w-33">
+                                <span class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">地板價</span>
+                                <div class="d-flex align-items-center justify-content-md-end justify-content-center">
+                                    <i class="fa-brands fa-ethereum me-2 fs--8"></i>
+                                    <p class="font-Squada fs--10 lh-20_32">2.90</p>
+                                </div>
+                            </li>
+                            <li class="w-md-20 w-50">
+                                <p class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">擁有者</p>32.1K
+                            </li>
+                            <li class="w-md-20 w-50">
+                                <p class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">作品數量</p>1000
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li
+                class="d-md-flex align-items-center justify-content-between pe-md-6 border border-black bg-white accordion-item mb--z1">
+                <a class="d-flex w-lg-47_6 accordion-header pe-2 pe-lg-0 position-relative collapsed" id="heading__8"
+                    data-bs-toggle="collapse" data-bs-target="#collapse__8" aria-expanded="true"
+                    aria-controls="collapse__8">
+                    <div class="triangle"></div>
+                    <p
+                        class="font-Paytone fs--12 lh-1 number__size justify-content-center d-flex align-items-center flex-shrink-1 py-6 border-end border-black">
+                        8</p>
+                    <div class="d-flex align-items-center justify-content-between w-100">
+                        <div class="d-flex px-2 ps-lg-4 pe-lg-0 align-items-center">
+                            <img src="./assets/images/art08.jpg" alt="art" class="rounded-circle size-48 me-2 me-lg-4">
+                            <h3 class="fs--8  m-0">人生中的貓咪們</h3>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fa-brands fa-ethereum me-2"></i>
+                            <p class="font-Squada fs--10 lh-20_32">770.23</p>
+                        </div>
+                    </div>
+                </a>
+                <ul class="list-unstyled w-lg-52 collapse d-md-block border-md-none border-top border-black"
+                    id="collapse__8">
+                    <li class="p-4 p-md-0">
+                        <ul class="list-unstyled d-flex font-Squada fs--10 lh-20_32 text-center text-md-end flex-wrap">
+                            <li class="text-success w-md-20 w-33">
+                                <p class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">24h%</p>+32.49%
+                            </li>
+                            <li class="text-success w-md-20 w-33 mb-4 mb-md-0">
+                                <p class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">7d%</p>+30.23
+                            </li>
+                            <li class="w-md-20 w-33">
+                                <span class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">地板價</span>
+                                <div class="d-flex align-items-center justify-content-md-end justify-content-center">
+                                    <i class="fa-brands fa-ethereum me-2 fs--8"></i>
+                                    <p class="font-Squada fs--10 lh-20_32">2.90</p>
+                                </div>
+                            </li>
+                            <li class="w-md-20 w-50">
+                                <p class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">擁有者</p>32.1K
+                            </li>
+                            <li class="w-md-20 w-50">
+                                <p class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">作品數量</p>1000
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li
+                class="d-md-flex align-items-center justify-content-between pe-md-6 border border-black bg-white accordion-item mb--z1">
+                <a class="d-flex w-lg-47_6 accordion-header pe-2 pe-lg-0 position-relative collapsed" id="heading__9"
+                    data-bs-toggle="collapse" data-bs-target="#collapse__9" aria-expanded="true"
+                    aria-controls="collapse__9">
+                    <div class="triangle"></div>
+                    <p
+                        class="font-Paytone fs--12 lh-1 number__size justify-content-center d-flex align-items-center flex-shrink-1 py-6 border-end border-black">
+                        9</p>
+                    <div class="d-flex align-items-center justify-content-between w-100">
+                        <div class="d-flex px-2 ps-lg-4 pe-lg-0 align-items-center">
+                            <img src="./assets/images/art28.jpg" alt="art" class="rounded-circle size-48 me-2 me-lg-4">
+                            <h3 class="fs--8  m-0">髒兮兮的家</h3>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fa-brands fa-ethereum me-2"></i>
+                            <p class="font-Squada fs--10 lh-20_32">502.31</p>
+                        </div>
+                    </div>
+                </a>
+                <ul class="list-unstyled w-lg-52 collapse d-md-block border-md-none border-top border-black"
+                    id="collapse__9">
+                    <li class="p-4 p-md-0">
+                        <ul class="list-unstyled d-flex font-Squada fs--10 lh-20_32 text-center text-md-end flex-wrap">
+                            <li class="text-success w-md-20 w-33">
+                                <p class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">24h%</p>+13.49%
+                            </li>
+                            <li class="text-success w-md-20 w-33 mb-4 mb-md-0">
+                                <p class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">7d%</p>+50.23
+                            </li>
+                            <li class="w-md-20 w-33">
+                                <span class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">地板價</span>
+                                <div class="d-flex align-items-center justify-content-md-end justify-content-center">
+                                    <i class="fa-brands fa-ethereum me-2 fs--8"></i>
+                                    <p class="font-Squada fs--10 lh-20_32">2.90</p>
+                                </div>
+                            </li>
+                            <li class="w-md-20 w-50">
+                                <p class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">擁有者</p>32.1K
+                            </li>
+                            <li class="w-md-20 w-50">
+                                <p class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">作品數量</p>1000
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li
+                class="d-md-flex align-items-center justify-content-between pe-md-6 border border-black bg-white accordion-item mb--z1">
+                <a class="d-flex w-lg-47_6 accordion-header pe-2 pe-lg-0 position-relative collapsed" id="heading__10"
+                    data-bs-toggle="collapse" data-bs-target="#collapse__10" aria-expanded="true"
+                    aria-controls="collapse__10">
+                    <div class="triangle"></div>
+                    <p
+                        class="font-Paytone fs--12 lh-1 number__size justify-content-center d-flex align-items-center flex-shrink-1 py-6 border-end border-black">
+                        10</p>
+                    <div class="d-flex align-items-center justify-content-between w-100">
+                        <div class="d-flex px-2 ps-lg-4 pe-lg-0 align-items-center">
+                            <img src="./assets/images/art16.jpg" alt="art" class="rounded-circle size-48 me-2 me-lg-4">
+                            <h3 class="fs--8  m-0">細胞小將</h3>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fa-brands fa-ethereum me-2"></i>
+                            <p class="font-Squada fs--10 lh-20_32">420.20</p>
+                        </div>
+                    </div>
+                </a>
+                <ul class="list-unstyled w-lg-52 collapse d-md-block border-md-none border-top border-black"
+                    id="collapse__10">
+                    <li class="p-4 p-md-0">
+                        <ul class="list-unstyled d-flex font-Squada fs--10 lh-20_32 text-center text-md-end flex-wrap">
+                            <li class="text-success w-md-20 w-33">
+                                <p class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">24h%</p>+54.49%
+                            </li>
+                            <li class="text-success w-md-20 w-33 mb-4 mb-md-0">
+                                <p class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">7d%</p>-12.43%
+                            </li>
+                            <li class="w-md-20 w-33">
+                                <span class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">地板價</span>
+                                <div class="d-flex align-items-center justify-content-md-end justify-content-center">
+                                    <i class="fa-brands fa-ethereum me-2 fs--8"></i>
+                                    <p class="font-Squada fs--10 lh-20_32">2.90</p>
+                                </div>
+                            </li>
+                            <li class="w-md-20 w-50">
+                                <p class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">擁有者</p>32.1K
+                            </li>
+                            <li class="w-md-20 w-50">
+                                <p class="fs--7 lh-14_32 text-black font-NotoSansTC d-block d-md-none">作品數量</p>1000
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>        
+</section>
+
+
+  </main>
+  <footer class="border-top border-primary border-4 mt-2">
+    <div class="container">
+      <div class="d-flex justify-content-center p-6">
+        <p>© ART NFT. All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Wallet-Modal -->
+  <div class="modal fade" id="linkWallet" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-0 vh-100 h-sm-auto">
+        <div class="modal-header border-primary justify-content-center d-sm-block position-relative">
+          <h5 class="modal-title lh-20_29 fw-normal text-center">連結你的錢包</h5>
+          <button type="button" class="btn-close d-sm-none ms-0 size-14 p-0 position-absolute opacity-100"
+            data-bs-dismiss="modal" aria-label="Close" style="right: 24px"></button>
+        </div>
+        <div class="modal-body py-6 px-3 p-sm-4">
+          <ul class="row list-unstyled g-2">
+            <li class="col-12 col-sm-6 lh-1"><a href="#"
+                class="d-flex align-items-center justify-content-between p-4 border border-primary mb--z1 me--z1 font-Squada wallet_botton">
+                <div class="d-flex align-items-center"><img src="./assets/images/logo/connect01.png" alt="MetaMask"
+                    class="size-16 me-4">MetaMask</div><i class="fa-solid fa-check size-12 mb-1 fade check-icon"></i>
+              </a></li>
+            <li class="col-12 col-sm-6 lh-1"><a href="#"
+                class="d-flex align-items-center justify-content-between p-4 border border-primary mb--z1 me--z1 font-Squada wallet_botton">
+                <div class="d-flex align-items-center"><img src="./assets/images/logo/connect02.png"
+                    alt="Coinbase Wallet" class="size-16 me-4">Coinbase Wallet</div><i
+                  class="fa-solid fa-check size-12 mb-1  fade check-icon"></i>
+              </a></li>
+            <li class="col-12 col-sm-6 lh-1"><a href="#"
+                class="d-flex align-items-center justify-content-between p-4 border border-primary mb--z1 me--z1 font-Squada wallet_botton">
+                <div class="d-flex align-items-center"><img src="./assets/images/logo/connect03.png" alt="WalletConnect"
+                    class="size-16 me-4">WalletConnect</div><i
+                  class="fa-solid fa-check size-12 mb-1  fade check-icon"></i>
+              </a></li>
+            <li class="col-12 col-sm-6 lh-1"><a href="#"
+                class="d-flex align-items-center justify-content-between p-4 border border-primary mb--z1 me--z1 font-Squada wallet_botton">
+                <div class="d-flex align-items-center"><img src="./assets/images/logo/connect04.png" alt="Phantom"
+                    class="size-16 me-4">Phantom</div><i class="fa-solid fa-check size-12 mb-1  fade check-icon"></i>
+              </a></li>
+            <li class="col-12 col-sm-6 lh-1"><a href="#"
+                class="d-flex align-items-center justify-content-between p-4 border border-primary mb--z1 me--z1 font-Squada wallet_botton">
+                <div class="d-flex align-items-center"><img src="./assets/images/logo/connect05.png" alt="Glow"
+                    class="size-16 me-4">Glow</div><i class="fa-solid fa-check size-12 mb-1  fade check-icon"></i>
+              </a></li>
+            <li class="col-12 col-sm-6 lh-1"><a href="#"
+                class="d-flex align-items-center justify-content-between p-4 border border-primary mb--z1 me--z1 font-Squada wallet_botton">
+                <div class="d-flex align-items-center"><img src="./assets/images/logo/connect06.png" alt="Fortmatic"
+                    class="size-16 me-4">Fortmatic</div><i class="fa-solid fa-check size-12 mb-1  fade check-icon"></i>
+              </a></li>
+          </ul>
+        </div>
+        <div class="d-grid border-none d-sm-flex justify-content-sm-center px-0 py-0 p-sm-3">
+          <button type="button" class="btn btn-secondary text-white rounded-0 border border-primary m-0"
+            data-bs-dismiss="modal">連結錢包</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Offcanvas -->
+  <div class="offcanvas offcanvas-top top_50 top-sm-104 d-lg-none height-min pb-6" tabindex="-1" id="offcanvasTop"
+    aria-labelledby="offcanvasTopLabel" data-bs-backdrop="false">
+    <ul class="list-unstyled offcanvas-body text-center px-3 py-0">
+      <li><a href="" class="fs--9 lh-18_26 fw-bold py-6 border-bottom border-primary border-2">探索</a></li>
+      <li><a href="" class="fs--9 lh-18_26 fw-bold py-6">市值</a></li>
+      <li class="d-grid"><button
+          class="btn btn-secondary rounded-0 border border-primary text-white fs--9 lh-18_26 py-3"
+          data-bs-toggle="modal" data-bs-target="#linkWallet">連結錢包</button></li>
+    </ul>
+  </div>
+  <div class="offcanvas-backdrop fade"></div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
