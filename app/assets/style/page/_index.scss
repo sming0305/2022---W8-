@@ -165,8 +165,31 @@
 
     &__image--size7 {
 
+        height: 139px;
+        object-fit: cover;
+
+        @include mobile-min {
+            height: 245px;
+        }
+
         @include md {
             height: 395px;
+        }
+    }
+
+    &__image--size8 {
+
+        height: 185px;
+
+        @include md {
+            height: 254px;
+        }
+    }
+
+    &__image--size11 {
+        height: 164px;
+        @include md {
+            height: 327px;
         }
     }
 }

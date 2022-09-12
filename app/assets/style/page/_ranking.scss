@@ -1,0 +1,67 @@
+.w-lg-47_6 {
+    @include md {
+        width: 47.6%;
+    }
+}
+
+.w-lg-52 {
+    @include md {
+        width: 52%;
+    }
+}
+
+.number__size {
+    width: 38px;
+
+    @include tablet-min {
+        min-width: 54px;
+    }
+}
+
+.triangle {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-top: 16px solid transparent;
+    border-left: 16px solid transparent;
+    border-right: 16px solid #E6553B;
+    border-bottom: 16px solid #E6553B;
+
+    &::after {
+        position: relative;
+        content: "-";
+        color: #fff;
+        bottom: 8px;
+        right: -4px;
+    }
+
+    @include md {
+        display: none;
+    }
+}
+
+.collapsed .triangle {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-top: 16px solid transparent;
+    border-left: 16px solid transparent;
+    border-right: 16px solid #000;
+    border-bottom: 16px solid #000;
+
+    &::after {
+        position: relative;
+        content: "+";
+        color: #fff;
+        bottom: 8px;
+        right: -2px;
+    }
+
+    @include md {
+        display: none;
+    }
+}

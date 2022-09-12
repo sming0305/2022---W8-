@@ -1,81 +1,89 @@
-.swiper-container {
+.swiper {
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
 
-.swiper-wrapper {
-    display: flex;
-    align-items: center;
-    height: 232px;
+.swiper-container-1 {
 
-    @include mobile-min {
-        height: 336px;
+
+    .swiper-wrapper {
+        display: flex;
+        align-items: center;
+        height: 232px;
+
+        @include mobile-min {
+            height: 336px;
+        }
+
+        @include tablet-min {
+            height: 439px;
+        }
     }
 
-    @include tablet-min {
-        height: 439px;
+    .swiper-slide {
+        height: 262px;
+
+        @include xl {
+            filter: grayscale(100%);
+        }
+
+        transition: 1100ms;
+
+        &__img {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        &-1 {
+            background-image: url(../images/artist01.jpg);
+
+        }
+
+        &-2 {
+            background-image: url(../images/artist02.jpg);
+        }
+
+        &-3 {
+            background-image: url(../images/artist03.jpg);
+        }
+
+        &-4 {
+            background-image: url("https://christies.shorthandstories.com/Beeple-s-masterwork-zh/assets/LHiNgw8Zrt/10-07-20-1600x2000.jpeg");
+        }
+
     }
-}
 
-.swiper-slide {
-    height: 262px;
-
-    @include xl {
+    .swiper-slide.swiper-slide-prev,
+    .swiper-slide.swiper-slide-next {
+        height: 100%;
         filter: grayscale(100%);
+
+        @include xl {
+            width: 23.6% !important;
+            height: 262px !important;
+        }
     }
 
-    transition: 1100ms;
+    .swiper-slide-active {
+        height: 100%;
 
-    &__img {
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-    }
+        & .show {
+            opacity: 1 !important;
+            transition-delay: 300ms;
+            transition-duration: 400ms;
+        }
 
-    &-1 {
-        background-image: url(../images/artist01.jpg);
-
-    }
-
-    &-2 {
-        background-image: url(../images/artist02.jpg);
-    }
-
-    &-3 {
-        background-image: url(../images/artist03.jpg);
-    }
-
-    &-4 {
-        background-image: url("https://christies.shorthandstories.com/Beeple-s-masterwork-zh/assets/LHiNgw8Zrt/10-07-20-1600x2000.jpeg");
+        @include xl {
+            width: 49.07% !important;
+            filter: saturate(100%);
+        }
     }
 
 }
 
-.swiper-slide.swiper-slide-prev,
-.swiper-slide.swiper-slide-next {
-    height: 100%;
-    filter: grayscale(100%);
-    @include xl {
-        width: 23.6% !important;
-        height: 262px !important;
-    }
-}
 
-.swiper-slide-active {
-    height: 100%;
-
-    & .show{
-        opacity: 1 !important;
-        transition-delay: 300ms;
-        transition-duration: 400ms;
-    }
-
-    @include xl {
-        width: 49.07% !important;
-        filter: saturate(100%);
-    }
-}
 
 .swiper__controlBox1 {
     position: initial;

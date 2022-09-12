@@ -1,0 +1,20 @@
+.Artwork__item {
+
+    &__image--size9 {
+
+        height: 173px;
+
+        @include md {
+            height: 334px;
+        }
+    }
+
+    &__image--size10 {
+
+        height: 160px;
+
+        @include md {
+            height: 340px;
+        }
+    }
+}
