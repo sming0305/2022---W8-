@@ -37,22 +37,44 @@ $(document).ready(function () {
     $(".mobile__control").removeClass("w-100");
   });
 
+
+  // 發現如果要使用瀑布流 + according，開合會取不到高度。
+  // 查閱同學解法後，後續再理解，先自行用替代作法切出大概的排版位置。
+
+  $("#introduce-detal__heading__2").click(function (e) {
+    e.preventDefault();
+    $("#introduce-detal__heading__3").parent().toggleClass("mt-lg-z32")
+  });
+
+  // const accordionButtons = document.querySelectorAll(".grid-masonry .accordion");
+  // accordionButtons.forEach(function (e) {
+  //   ["hidden.bs.collapse", "shown.bs.collapse"].forEach(function (item) {
+  //     e.addEventListener(item, () => {
+  //       masonry();
+  //     });
+  //   });
+  // });
+
+
+  $("#walletButton__pc").click(function (e) {
+    e.preventDefault();
+    $(".workseries__menu__modal-backdrop").toggleClass("show");
+    $(".workseries__menu__modal-backdrop").toggleClass("active");
+  });
+
+  $("#linkWallet").click(function (e) {
+    e.preventDefault();
+    $(".workseries__menu__modal-backdrop").removeClass("show");
+    $(".workseries__menu__modal-backdrop").removeClass("active");
+  });
+
+  $(".introduce-detal-accordion-button.collapsed").click(function (e) { 
+    e.preventDefault();
+    $(this).parent().toggleClass("mb-6");
+  });
+
+
 });
-
-// 如果要使用瀑布流 + according，開合會取不到高度，introduce-detal.html這頁先不用瀑布流
-
-// 同學:Will Wu 解法，先做紀錄，後續再理解
-// https://letcla0624.github.io/hexLayoutWeek8/art-intro.html
-// https://github.com/letcla0624/hexLayoutWeek8/blob/main/app/assets/js/all.js
-
-// const accordionButtons = document.querySelectorAll(".grid-masonry .accordion");
-// accordionButtons.forEach(function (e) {
-//   ["hidden.bs.collapse", "shown.bs.collapse"].forEach(function (item) {
-//     e.addEventListener(item, () => {
-//       masonry();
-//     });
-//   });
-// });
 
 var swiper = new Swiper('.swiper-container-1', {
   speed: 1600,
@@ -109,6 +131,7 @@ var swiper = new Swiper('.swiper-container-2', {
     clickable: true,
   },
 });
+
 
 
 $('.masonry').imagesLoaded().progress(function () {

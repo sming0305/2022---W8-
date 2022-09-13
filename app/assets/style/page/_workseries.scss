@@ -1,0 +1,37 @@
+.workseries--scrollbar {
+    transform: translate(0, 0) !important;
+}
+
+.workseries .workseries__menu__modal-backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1070;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+
+    &.fade {
+        opacity: 0;
+    }
+
+    &.show {
+        opacity: 0.7;
+    }
+
+    &.active {
+        display: block;
+    }
+}
+
+.workseries .modal-backdrop {
+    @include tablet-min {
+        display: none !important;
+    }
+}
+
+.workseries__button{
+    left: calc(50% - 81px);
+    bottom: 24px;
+}

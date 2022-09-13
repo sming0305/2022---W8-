@@ -1,0 +1,293 @@
+---
+title: ART NFT
+layout: ./app/layout.ejs
+engine: ejs
+current: workseries
+---
+
+<section class="pt-6 pb-12 pt-lg-10 pb-lg-20">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-3 col-12">
+                <div class="modal fade show opacity-lg-100 d-lg-block position-lg-initial overflow-hidden"
+                    id="workseries" tabindex="-1" aria-labelledby="workseriesLabel" aria-hidden="true"
+                    style="overflow: initial;">
+                    <div class="modal-dialog modal-dialog-scrollable workseries--scrollbar">
+                        <div class="modal-content overflow-lg-initial">
+                            <div
+                                class="modal-header d-flex d-lg-none  border-primary justify-content-center d-sm-block position-relative">
+                                <h4 class="modal-title fs--10 lh-20_29 fw-normal text-center" id="workseriesLabel">篩選條件
+                                </h4>
+                                <button type="button"
+                                    class="btn-close d-sm-none ms-0 size-14 p-0  position-absolute opacity-100"
+                                    data-bs-dismiss="modal" aria-label="Close" style="right: 24px;"></button>
+                            </div>
+                            <form action="index.html" class="modal-body">
+                                <div class="accordion" id="workseries__select">
+                                    <div class="accordion-item px-3 pt-6 px-lg-6 border-none border-lg-bottom">
+                                        <h4 class="accordion-header mb-4" id="workseries__heading1">
+                                            <a class="accordion-button fw-bold introduce-detal-accordion-button"
+                                                data-bs-toggle="collapse" data-bs-target="#workseries__select--1"
+                                                aria-expanded="true" aria-controls="workseries__select--1">
+                                                網路
+                                            </a>
+                                        </h4>
+                                        <div id="workseries__select--1"
+                                            class="accordion-collapse collapse show pb-6 border-bottom border-main border-lg-none"
+                                            aria-labelledby="workseries__heading1">
+                                            <div class="mb-2 d-flex justify-content-between">
+                                                <label class="form-check-label" for="Solidity">
+                                                    以太坊
+                                                </label>
+                                                <input class="form-check-input" type="checkbox" id="Solidity"
+                                                    name="NET">
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <label class="form-check-label" for="BNB">
+                                                    BNB 智能鏈
+                                                </label>
+                                                <input class="form-check-input" type="checkbox" id="BNB" name="NET">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item px-3 pt-6 px-lg-6 border-none border-lg-bottom">
+                                        <h4 class="accordion-header mb-4" id="workseries__heading2">
+                                            <a class="accordion-button fw-bold introduce-detal-accordion-button"
+                                                data-bs-toggle="collapse" data-bs-target="#workseries__select--2"
+                                                aria-expanded="false" aria-controls="workseries__select--2">
+                                                狀態
+                                            </a>
+                                        </h4>
+                                        <div id="workseries__select--2"
+                                            class="accordion-collapse collapse show pb-6 border-bottom border-main border-lg-none"
+                                            aria-labelledby="workseries__heading2">
+                                            <div class="mb-2 d-flex justify-content-between">
+                                                <label class="form-check-label" for="onlyshow">
+                                                    僅展示
+                                                </label>
+                                                <input class="form-check-input" type="checkbox" id="onlyshow"
+                                                    name="status">
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <label class="form-check-label" for="selling">
+                                                    拍賣中
+                                                </label>
+                                                <input class="form-check-input" type="checkbox" id="selling"
+                                                    name="status">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item px-3 pt-6 px-lg-6 border-none border-lg-bottom">
+                                        <h4 class="accordion-header mb-4" id="workseries__heading3">
+                                            <a class="accordion-button fw-bold introduce-detal-accordion-button"
+                                                data-bs-toggle="collapse" data-bs-target="#workseries__select--3"
+                                                aria-expanded="false" aria-controls="workseries__select--3">
+                                                價格
+                                            </a>
+                                        </h4>
+                                        <div id="workseries__select--3"
+                                            class="accordion-collapse collapse show pb-6 border-bottom border-main border-lg-none"
+                                            aria-labelledby="workseries__heading3">
+                                            <div class="mb-2 d-flex align-items-center">
+                                                <select name="price" id="price"
+                                                    class="p-2 rounded-0 me-2 border-black border h-40">
+                                                    <option value="ETH" selected name="price">ETH</option>
+                                                    <option value="BTC" name="price">BTC</option>
+                                                </select>
+                                                <input class="form-control px-3 rounded-0 me-2 border-black border h-40"
+                                                    type="text" id="pricelow" name="status" style="max-width: 73px;">
+                                                <label class="form-check-label me-2" for="pricelow">
+                                                    -
+                                                </label>
+                                                <input class="form-control px-3 rounded-0 border-black border h-40"
+                                                    type="text" id="pricehight" name="status" style="max-width: 73px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item px-3 pt-6 px-lg-6">
+                                        <p class="fw-bold text-info mb-6">屬性</p>
+                                        <h4 class="accordion-header mb-4" id="workseries__heading4">
+                                            <a class="accordion-button fw-bold introduce-detal-accordion-button"
+                                                data-bs-toggle="collapse" data-bs-target="#workseries__select--4"
+                                                aria-expanded="false" aria-controls="workseries__select--4">
+                                                品種
+                                            </a>
+                                        </h4>
+                                        <div id="workseries__select--4"
+                                            class="accordion-collapse collapse show pb-6 border-bottom border-main border-lg-none"
+                                            aria-labelledby="workseries__heading4">
+                                            <div class="mb-2 d-flex justify-content-between">
+                                                <label class="form-check-label" for="onlyshow">
+                                                    八哥
+                                                </label>
+                                                <input class="form-check-input" type="checkbox" id="onlyshow"
+                                                    name="status">
+                                            </div>
+                                            <div class="mb-2 d-flex justify-content-between">
+                                                <label class="form-check-label" for="selling">
+                                                    虎皮鸚鵡
+                                                </label>
+                                                <input class="form-check-input" type="checkbox" id="selling"
+                                                    name="status">
+                                            </div>
+                                            <div class="mb-2 d-flex justify-content-between">
+                                                <label class="form-check-label" for="selling">
+                                                    太平鳥
+                                                </label>
+                                                <input class="form-check-input" type="checkbox" id="selling"
+                                                    name="status">
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <label class="form-check-label" for="selling">
+                                                    畫眉鳥
+                                                </label>
+                                                <input class="form-check-input" type="checkbox" id="selling"
+                                                    name="status">
+                                            </div>
+                                        </div>
+                                        <h4 class="accordion-header mb-4 mb-6" id="workseries__heading5">
+                                            <a class="accordion-button fw-bold introduce-detal-accordion-button collapsed"
+                                                data-bs-toggle="collapse" data-bs-target="#workseries__select--5"
+                                                aria-expanded="false" aria-controls="workseries__select--5">
+                                                鳥的數量
+                                            </a>
+                                        </h4>
+                                        <div id="workseries__select--5"
+                                            class="accordion-collapse collapse pb-6 border-bottom border-main border-lg-none"
+                                            aria-labelledby="workseries__heading5">
+                                            <div class="mb-2 d-flex justify-content-between">
+                                                <label class="form-check-label" for="onlyshow">
+                                                    一枝獨秀
+                                                </label>
+                                                <input class="form-check-input" type="checkbox" id="onlyshow"
+                                                    name="status">
+                                            </div>
+                                            <div class="mb-2 d-flex justify-content-between">
+                                                <label class="form-check-label" for="selling">
+                                                    成雙成對
+                                                </label>
+                                                <input class="form-check-input" type="checkbox" id="selling"
+                                                    name="status">
+                                            </div>
+                                            <div class="mb-2 d-flex justify-content-between">
+                                                <label class="form-check-label" for="selling">
+                                                    三人成虎
+                                                </label>
+                                                <input class="form-check-input" type="checkbox" id="selling"
+                                                    name="status">
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <label class="form-check-label" for="selling">
+                                                    狐群狗黨
+                                                </label>
+                                                <input class="form-check-input" type="checkbox" id="selling"
+                                                    name="status">
+                                            </div>
+                                        </div>
+
+                                        <h4 class="accordion-header mb-4 mb-6" id="workseries__heading6">
+                                            <a class="accordion-button fw-bold introduce-detal-accordion-button collapsed"
+                                                data-bs-toggle="collapse" data-bs-target="#workseries__select--6"
+                                                aria-expanded="false" aria-controls="workseries__select--6">
+                                                是否有花草
+                                            </a>
+                                        </h4>
+                                        <div id="workseries__select--6"
+                                            class="accordion-collapse collapse pb-6 border-bottom border-main border-lg-none"
+                                            aria-labelledby="workseries__heading6">
+                                            <div class="mb-2 d-flex justify-content-between">
+                                                <label class="form-check-label" for="onlyshow">
+                                                    華麗花叢
+                                                </label>
+                                                <input class="form-check-input" type="checkbox" id="onlyshow"
+                                                    name="status">
+                                            </div>
+                                            <div class="mb-2 d-flex justify-content-between">
+                                                <label class="form-check-label" for="selling">
+                                                    花田
+                                                </label>
+                                                <input class="form-check-input" type="checkbox" id="selling"
+                                                    name="status">
+                                            </div>
+                                            <div class="mb-2 d-flex justify-content-between">
+                                                <label class="form-check-label" for="selling">
+                                                    秋季
+                                                </label>
+                                                <input class="form-check-input" type="checkbox" id="selling"
+                                                    name="status">
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <label class="form-check-label" for="selling">
+                                                    一般
+                                                </label>
+                                                <input class="form-check-input" type="checkbox" id="selling"
+                                                    name="status">
+                                            </div>
+                                        </div>
+
+                                        <h4 class="accordion-header mb-4 mb-6" id="workseries__heading7">
+                                            <a class="accordion-button fw-bold introduce-detal-accordion-button collapsed"
+                                                data-bs-toggle="collapse" data-bs-target="#workseries__select--7"
+                                                aria-expanded="false" aria-controls="workseries__select--7">
+                                                鳥的顏色
+                                            </a>
+                                        </h4>
+                                        <div id="workseries__select--7"
+                                            class="accordion-collapse collapse pb-6 border-bottom border-main border-lg-none"
+                                            aria-labelledby="workseries__heading7">
+                                            <div class="mb-2 d-flex justify-content-between">
+                                                <label class="form-check-label" for="onlyshow">
+                                                    強烈對比
+                                                </label>
+                                                <input class="form-check-input" type="checkbox" id="onlyshow"
+                                                    name="status">
+                                            </div>
+                                            <div class="mb-2 d-flex justify-content-between">
+                                                <label class="form-check-label" for="selling">
+                                                    炫目
+                                                </label>
+                                                <input class="form-check-input" type="checkbox" id="selling"
+                                                    name="status">
+                                            </div>
+                                            <div class="mb-2 d-flex justify-content-between">
+                                                <label class="form-check-label" for="selling">
+                                                    和諧
+                                                </label>
+                                                <input class="form-check-input" type="checkbox" id="selling"
+                                                    name="status">
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <label class="form-check-label" for="selling">
+                                                    一般
+                                                </label>
+                                                <input class="form-check-input" type="checkbox" id="selling"
+                                                    name="status">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </form>
+                            <div class="modal-footer p-0 d-block d-lg-none">
+                                <div class=" d-grid w-100 m-0">
+                                    <button type="button" class="btn btn-secondary rounded-0 text-white fs--9 lh-18_26"
+                                        data-bs-dismiss="modal">確認</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9 col-12">
+                <div></div>
+            </div>
+
+        </div>
+    </div>
+    <button type="button" class="btn btn-primary position-fixed workseries__button rounded-0 d-block d-lg-none"
+        data-bs-toggle="modal" data-bs-target="#workseries">
+        篩選條件 2
+    </button>
+</section>

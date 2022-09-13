@@ -616,6 +616,8 @@
     margin-left: -1px !important;
 }
 
+
+
 @include tablet-min{
 
 .mt-lg-z12 {
@@ -694,13 +696,22 @@
 }
 
 
+.m0-auto{
+    margin: 0 auto;
+}
+
 .height-min {
     height: min-content;
+}
+
+.h-40{
+    height: 40px !important;
 }
 
 .w-10_6{
     width: 10.6%;
 }
+
 
 .w-16_6{
     width: 16.6%;
@@ -710,10 +721,10 @@
     width: 20%;
 }
 
+
 .w-33{
     width: 33.333%;
 }
-
 
 
 .top_50 {
@@ -727,6 +738,7 @@
 .r-0 {
     right: 0;
 }
+
 
 .b-0 {
     bottom: 0;

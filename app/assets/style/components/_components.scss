@@ -25,6 +25,12 @@
     }
 }
 
+.border-lg-none {
+    @include tablet-min {
+        border: none !important;
+    }
+}
+
 .border-xl-none {
     @include xl {
         border: none !important;
@@ -34,6 +40,12 @@
 .border-sm-bottom {
     @include mobile-min {
         border-bottom: 1px solid !important;
+    }
+}
+
+.border-lg-bottom {
+    @include tablet-min {
+        border-bottom: 1px solid #F0F0F0 !important;
     }
 }
 
@@ -101,6 +113,12 @@
     }
 }
 
+.position-lg-initial {
+    @include tablet-min {
+        position: initial !important;
+    }
+}
+
 .position-xl-absolute {
     @include xl {
         position: absolute;
@@ -119,7 +137,19 @@
     }
 }
 
+.opacity-lg-100 {
 
+    @include tablet-min {
+        opacity: 1 !important;
+    }
+}
+
+.overflow-lg-initial {
+
+    @include tablet-min {
+        overflow: initial !important;
+    }
+}
 
 .size-12 {
     width: 12px;
@@ -139,7 +169,8 @@
 .size-32 {
     width: 32px;
     height: 32px;
-}    
+}
+
 .size-48 {
     width: 48px;
     height: 48px;

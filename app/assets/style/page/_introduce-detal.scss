@@ -23,3 +23,27 @@
     }
 
 }
+
+.w-xl-13_6 {
+    @include xl {
+        width: 13.6%;
+    }
+}
+
+.w-xl-28_8 {
+    @include xl {
+        width: 28.8%;
+    }
+}
+
+.w-xl-44 {
+    @include xl {
+        width: 44.217%;
+    }
+}
+
+.mt-lg-z32 {
+    @include tablet-min {
+        margin-top: -32px !important;
+    }
+}
