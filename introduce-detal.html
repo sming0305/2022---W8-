@@ -31,7 +31,7 @@
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
-<body class="d-flex flex-column">
+<body class="d-flex flex-column introduce-detal" id="body">
   <nav class="border-bottom border-primary fixed-top z-1060 bg-main">
     <div class="container">
       <div class="d-flex align-items-center justify-content-between position-relative">
@@ -47,7 +47,7 @@
           </li>
           <li><a href="explore.html" class="px-7 py-10 px-xl-12 fw-bold border-end border-primary btn--action">探索</a></li>
           <li><a href="ranking.html" class="px-7 py-10 px-xl-12 fw-bold border-end border-primary btn--action">市值</a></li>
-          <li><a href="#" class="ps-7 py-10 ps-xl-12 btn--action" data-bs-toggle="modal" data-bs-target="#linkWallet">
+          <li><a href="#" class="ps-7 py-10 ps-xl-12 btn--action" data-bs-toggle="modal" data-bs-target="#linkWallet" id="walletButton__pc">
               <i class="fa-solid fa-wallet"></i></a>
           </li>
         </ul>
@@ -86,7 +86,7 @@
     
 <section class="pt-3 pb-10 pt-lg-10">
     <div class="container">
-        <div class="row">
+        <div class="row align-items-start">
             <div class="col-12 col-lg-6">
                 <img src="./assets/images/art21.jpg" alt="art" class="introduce-detal__--size1 mb-6">
             </div>
@@ -119,10 +119,10 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-6 mb-6">
                 <a class="accordion-header  collapsed accordion-button fw-bold p-4 p-lg-6 bg-white border border-black mb--z1 introduce-detal-accordion-button"
                     id="introduce-detal__heading__1" data-bs-toggle="collapse" data-bs-target="#introduce__detal__1"
-                    aria-expanded="true" aria-controls="introduce__detal__1">屬性</a>
+                    aria-expanded="false" aria-controls="introduce__detal__1">屬性</a>
                 <ul class="list-unstyled collapse show py-6 px-4 px-lg-6 bg-white  border border-black"
                     id="introduce__detal__1">
                     <li class="d-flex justify-content-between align-items-start pb-2 mb-2 border-bottom border-main">
@@ -131,56 +131,125 @@
                         鳥的數量<span class="text-info">2隻</span></li>
                     <li class="d-flex justify-content-between align-items-start pb-2 mb-2 border-bottom border-main">
                         是否有花草<span class="text-info">是</span></li>
-                    <li class="d-flex justify-content-between align-items-start pb-2 border-bottom border-main">
+                    <li class="d-flex justify-content-between align-items-start pb-2">
                         鳥的顏色<span class="text-info">藍色</span></li>
                 </ul>
             </div>
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-6 mb-6">
                 <a class="accordion-header  collapsed accordion-button fw-bold p-4 p-lg-6 bg-white border border-black mb--z1 introduce-detal-accordion-button"
                     id="introduce-detal__heading__2" data-bs-toggle="collapse" data-bs-target="#introduce__detal__2"
-                    aria-expanded="true" aria-controls="introduce__detal__2">出價</a>
+                    aria-expanded="false" aria-controls="introduce__detal__2">出價</a>
                 <div class="py-6 px-4 px-lg-6 bg-white border border-black collapse show" id="introduce__detal__2">
-                    <table class="table table-hover">
-                        <thead class="table">
-                            <tr class="table-main">
-                                <th>價格</th>
-                                <th>期限</th>
+                    <table class="table table-hover m-0">
+                        <thead>
+                            <tr class="table-main text-center text-md-start">
+                                <th class="w-50 border-none">價格</th>
+                                <th class="border-none">期限</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="d-flex align-items-center">
-                                    <img src="./assets/images/user01.jpg" alt="user" class="size-32 rounded-circle me-2">
-                                    <i class="fa-solid fa-arrow-right me-2 fs--7"></i>
-                                    <p class="font-Squada lh-16_17">0.044Eth</p>
+                                <td class="px-0 px-sm-4">
+                                    <div class="d-flex align-items-center">
+                                        <img src="./assets/images/artist03.jpg" alt="artist"
+                                            class="size-32 rounded-circle me-2">
+                                        <i class="fa-solid fa-arrow-right me-2 fs--7"></i>
+                                        <p class="font-Squada lh-16_17">0.044Eth</p>
+                                    </div>
                                 </td>
-                                <td>3個月後</td>
+                                <td class="align-middle text-end text-sm-start text-info px-0 px-sm-4">3個月後</td>
                             </tr>
                             <tr>
-                                <td>
-                                    <img src="" alt="">
-                                    <p></p>
+                                <td class="px-0 px-sm-4">
+                                    <div class="d-flex align-items-center">
+                                        <img src="./assets/images/user02.jpg" alt="user"
+                                            class="size-32 rounded-circle me-2">
+                                        <i class="fa-solid fa-arrow-right me-2 fs--7"></i>
+                                        <p class="font-Squada lh-16_17">0.054Eth</p>
+                                    </div>
                                 </td>
-                                <td></td>
+                                <td class="align-middle text-end text-sm-start text-info px-0 px-sm-4">1個月後</td>
                             </tr>
                             <tr>
-                                <td>
-                                    <img src="" alt="">
-                                    <p></p>
+                                <td class="px-0 px-sm-4 border-none">
+                                    <div class="d-flex align-items-center">
+                                        <img src="./assets/images/user03.jpg" alt="user"
+                                            class="size-32 rounded-circle me-2">
+                                        <i class="fa-solid fa-arrow-right me-2 fs--7"></i>
+                                        <p class="font-Squada lh-16_17">0.044Eth</p>
+                                    </div>
                                 </td>
-                                <td></td>
+                                <td class="align-middle text-end text-sm-start text-info px-0 px-sm-4 border-none">2週後
+                                </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
-            <div class="col-12 col-lg-6"></div>
-            <div class="col-12 col-lg-6"></div>
+            <div class="col-12 col-lg-6 mt-lg-z32 mb-6 m-lg-0">
+                <a href="#" class="accordion-header  collapsed accordion-button fw-bold p-4 p-lg-6 bg-white border border-black mb--z1 introduce-detal-accordion-button"
+                    id="introduce-detal__heading__3" data-bs-toggle="collapse" data-bs-target="#introduce__detal__3"
+                    aria-expanded="false" aria-controls="introduce__detal__3">基本資訊</a>
+                <ul class="list-unstyled collapse show py-6 px-4 px-lg-6 bg-white  border border-black"
+                    id="introduce__detal__3">
+                    <li class="d-flex justify-content-between align-items-start pb-2 mb-2 border-bottom border-main">
+                        擁有者<span class="text-info">0xa543x…1283</span></li>
+                    <li class="d-flex justify-content-between align-items-start pb-2 mb-2 border-bottom border-main">
+                        代幣ID<span class="text-info">#1234</span></li>
+                    <li class="d-flex justify-content-between align-items-start pb-2 mb-2">
+                        合約地址<span class="text-info">青藍金剛鸚鵡</span></li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-6">
+                <a class="accordion-header  collapsed accordion-button fw-bold p-4 p-lg-6 bg-white border border-black mb--z1 introduce-detal-accordion-button"
+                    id="introduce-detal__heading__4" data-bs-toggle="collapse" data-bs-target="#introduce__detal__4"
+                    aria-expanded="false" aria-controls="introduce__detal__4">交易歷史</a>
+                <div class="py-6 px-4 px-lg-6 bg-white border border-black collapse show" id="introduce__detal__4">
+                    <table class="table table-hover m-0">
+                        <thead>
+                            <tr class="table-main text-start">
+                                <th class="w-xl-13_6 border-none">事件</th>
+                                <th class="w-xl-13_6 border-none">價格</th>
+                                <th class="w-xl-44 border-none">從</th>
+                                <th class="w-xl-28_8 border-none">時間</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="align-middle">上架</td>
+                                <td class="align-middle">2nb</td>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <img src="./assets/images/artist03.jpg" alt="artist"
+                                            class="size-32 rounded-circle me-2">
+                                        <i class="fa-solid fa-arrow-right me-2 fs--7 d-none d-sm-block"></i>
+                                        <p class="font-Squada lh-16_17 d-none d-sm-block">0.044Eth</p>
+                                    </div>
+                                </td>
+                                <td class="align-middle text-start text-info">3個月後</td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle">出價</td>
+                                <td class="align-middle">2nb</td>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <img src="./assets/images/user02.jpg" alt="user"
+                                            class="size-32 rounded-circle me-2">
+                                        <i class="fa-solid fa-arrow-right me-2 fs--7 d-none d-sm-block"></i>
+                                        <p class="font-Squada lh-16_17 d-none d-sm-block">0.054Eth</p>
+                                    </div>
+                                </td>
+                                <td class="align-middle text-start text-info">1個月後</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-<section class="pt-3 pb-10 pt-lg-10 pb-lg-20">
+<section class="pb-10 pb-lg-20">
     <div class="container">
         <div class="d-flex justify-content-between border-bottom border-black mb-6 mb-lg-12">
             <h2 class="fs--10 lh-20_29 fw-bold mb-2 mb-lg-4"><span
@@ -303,7 +372,7 @@
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content rounded-0 vh-100 h-sm-auto">
-        <div class="modal-header border-primary justify-content-center d-sm-block position-relative">
+        <div class="modal-header border-primary justify-content-center align-items-center d-sm-block position-relative">
           <h5 class="modal-title lh-20_29 fw-normal text-center">連結你的錢包</h5>
           <button type="button" class="btn-close d-sm-none ms-0 size-14 p-0 position-absolute opacity-100"
             data-bs-dismiss="modal" aria-label="Close" style="right: 24px"></button>
@@ -356,14 +425,15 @@
   <div class="offcanvas offcanvas-top top_50 top-sm-104 d-lg-none height-min pb-6" tabindex="-1" id="offcanvasTop"
     aria-labelledby="offcanvasTopLabel" data-bs-backdrop="false">
     <ul class="list-unstyled offcanvas-body text-center px-3 py-0">
-      <li><a href="" class="fs--9 lh-18_26 fw-bold py-6 border-bottom border-primary border-2">探索</a></li>
-      <li><a href="" class="fs--9 lh-18_26 fw-bold py-6">市值</a></li>
+      <li><a href="explore.html" class="fs--9 lh-18_26 fw-bold py-6 border-bottom border-primary border-2">探索</a></li>
+      <li><a href="ranking.html" class="fs--9 lh-18_26 fw-bold py-6">市值</a></li>
       <li class="d-grid"><button
           class="btn btn-secondary rounded-0 border border-primary text-white fs--9 lh-18_26 py-3"
           data-bs-toggle="modal" data-bs-target="#linkWallet">連結錢包</button></li>
     </ul>
   </div>
   <div class="offcanvas-backdrop fade"></div>
+  <div class="workseries__menu__modal-backdrop fade"></div>
 
 
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>

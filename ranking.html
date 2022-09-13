@@ -31,7 +31,7 @@
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
-<body class="d-flex flex-column">
+<body class="d-flex flex-column ranking" id="body">
   <nav class="border-bottom border-primary fixed-top z-1060 bg-main">
     <div class="container">
       <div class="d-flex align-items-center justify-content-between position-relative">
@@ -47,7 +47,7 @@
           </li>
           <li><a href="explore.html" class="px-7 py-10 px-xl-12 fw-bold border-end border-primary btn--action">探索</a></li>
           <li><a href="ranking.html" class="px-7 py-10 px-xl-12 fw-bold border-end border-primary btn--action">市值</a></li>
-          <li><a href="#" class="ps-7 py-10 ps-xl-12 btn--action" data-bs-toggle="modal" data-bs-target="#linkWallet">
+          <li><a href="#" class="ps-7 py-10 ps-xl-12 btn--action" data-bs-toggle="modal" data-bs-target="#linkWallet" id="walletButton__pc">
               <i class="fa-solid fa-wallet"></i></a>
           </li>
         </ul>
@@ -593,7 +593,7 @@
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content rounded-0 vh-100 h-sm-auto">
-        <div class="modal-header border-primary justify-content-center d-sm-block position-relative">
+        <div class="modal-header border-primary justify-content-center align-items-center d-sm-block position-relative">
           <h5 class="modal-title lh-20_29 fw-normal text-center">連結你的錢包</h5>
           <button type="button" class="btn-close d-sm-none ms-0 size-14 p-0 position-absolute opacity-100"
             data-bs-dismiss="modal" aria-label="Close" style="right: 24px"></button>
@@ -646,14 +646,15 @@
   <div class="offcanvas offcanvas-top top_50 top-sm-104 d-lg-none height-min pb-6" tabindex="-1" id="offcanvasTop"
     aria-labelledby="offcanvasTopLabel" data-bs-backdrop="false">
     <ul class="list-unstyled offcanvas-body text-center px-3 py-0">
-      <li><a href="" class="fs--9 lh-18_26 fw-bold py-6 border-bottom border-primary border-2">探索</a></li>
-      <li><a href="" class="fs--9 lh-18_26 fw-bold py-6">市值</a></li>
+      <li><a href="explore.html" class="fs--9 lh-18_26 fw-bold py-6 border-bottom border-primary border-2">探索</a></li>
+      <li><a href="ranking.html" class="fs--9 lh-18_26 fw-bold py-6">市值</a></li>
       <li class="d-grid"><button
           class="btn btn-secondary rounded-0 border border-primary text-white fs--9 lh-18_26 py-3"
           data-bs-toggle="modal" data-bs-target="#linkWallet">連結錢包</button></li>
     </ul>
   </div>
   <div class="offcanvas-backdrop fade"></div>
+  <div class="workseries__menu__modal-backdrop fade"></div>
 
 
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
