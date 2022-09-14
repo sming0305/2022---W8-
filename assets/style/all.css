@@ -21596,6 +21596,10 @@ button {
   background-color: transparent;
 }
 
+select {
+  color: #000;
+}
+
 @media (min-width: 576px) {
   .top-sm-104 {
     top: 104px;
@@ -22128,7 +22132,7 @@ button {
   cursor: pointer;
   pointer-events: none;
   font-size: 10px;
-  right: 22px;
+  right: 20px;
   top: calc(50% - 5px);
 }
 
