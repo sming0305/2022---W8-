@@ -92,11 +92,31 @@
     }
 }
 
+.width-xl-auto {
+    @include xl {
+        width: auto !important;
+    }
+}
+
 .w-md-20 {
     @include md {
         width: 20% !important;
     }
 }
+
+.w-md-43 {
+    @include md {
+        width: 43%;
+    }
+}
+
+.w-md-54 {
+
+    @include md {
+        width: 54%;
+    }
+}
+
 
 
 

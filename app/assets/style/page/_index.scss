@@ -192,6 +192,13 @@
             height: 327px;
         }
     }
+
+    &__image--size12 {
+        height: 192px;
+        @include md {
+            height: 368px;
+        }
+    }
 }
 
 .joinUs--decoration{
