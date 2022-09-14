@@ -58,10 +58,6 @@ $(document).ready(function () {
     $(".workseries__menu__modal-backdrop").removeClass("show");
     $(".workseries__menu__modal-backdrop").removeClass("active");
   });
-  $(".introduce-detal-accordion-button.collapsed").click(function (e) {
-    e.preventDefault();
-    $(this).parent().toggleClass("mb-6");
-  });
 });
 var swiper = new Swiper('.swiper-container-1', {
   speed: 1600,

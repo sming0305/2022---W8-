@@ -28,6 +28,7 @@
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Paytone+One&family=Squada+One&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
@@ -45,9 +46,12 @@
                   class="fa-solid fa-magnifying-glass fs--12"></i></button>
             </form>
           </li>
-          <li><a href="explore.html" class="px-7 py-10 px-xl-12 fw-bold border-end border-primary btn--action">探索</a></li>
-          <li><a href="ranking.html" class="px-7 py-10 px-xl-12 fw-bold border-end border-primary btn--action">市值</a></li>
-          <li><a href="#" class="ps-7 py-10 ps-xl-12 btn--action" data-bs-toggle="modal" data-bs-target="#linkWallet" id="walletButton__pc">
+          <li><a href="explore.html" class="px-7 py-10 px-xl-12 fw-bold border-end border-primary btn--action">探索</a>
+          </li>
+          <li><a href="ranking.html" class="px-7 py-10 px-xl-12 fw-bold border-end border-primary btn--action">市值</a>
+          </li>
+          <li><a href="#" class="ps-7 py-10 ps-xl-12 btn--action" data-bs-toggle="modal" data-bs-target="#linkWallet"
+              id="walletButton__pc">
               <i class="fa-solid fa-wallet"></i></a>
           </li>
         </ul>
@@ -256,14 +260,14 @@
                     class="fs--16 fs-lg-24 lh-48_50 me-4 font-Squada fw-normal">Other</span><span
                     class="d-none d-md-inline-block">其餘作品</span></h2>
             <div class="d-flex align-items-end">
-                <a href="explore.html" class="button-type1 border-none py-2">MORE</a>
+                <a href="workseries.html" class="button-type1 border-none py-2">MORE</a>
             </div>
         </div>
 
         <div class="swiper swiper-container-2">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <a href="introduce-detal.html"
+                    <a href="workseries.html"
                         class="bg-white p-2 p-md-6 mb-2 mb-lg-4 position-relative Artwork__item">
                         <img src="./assets/images/art22.jpg" alt="art09" class="Artwork__item__image--size11 w-100">
                         <div class="position-absolute  h-100 w-100 r-0 t-0 p-2 p-lg-6 mb-2 mb-lg-4 opacity-0 show">
@@ -285,7 +289,7 @@
                     <h3 class="pb-lg-4 border-sm-bottom border-black fw-sm-bold fs--7 fs-sm-8">會有人愛我的</h3>
                 </div>
                 <div class="swiper-slide">
-                    <a href="introduce-detal.html"
+                    <a href="workseries.html"
                         class="bg-white p-2 p-md-6 mb-2 mb-lg-4 position-relative Artwork__item">
                         <img src="./assets/images/art27.jpg" alt="art09" class="Artwork__item__image--size11 w-100">
                         <div class="position-absolute  h-100 w-100 r-0 t-0 p-2 p-lg-6 mb-2 mb-lg-4 opacity-0 show">
@@ -307,7 +311,7 @@
                     <h3 class="pb-lg-4 border-sm-bottom border-black fw-sm-bold fs--7 fs-sm-8">我真的受傷了</h3>
                 </div>
                 <div class="swiper-slide">
-                    <a href="introduce-detal.html"
+                    <a href="workseries.html"
                         class="bg-white p-2 p-md-6 mb-2 mb-lg-4 position-relative Artwork__item">
                         <img src="./assets/images/art20.jpg" alt="art09" class="Artwork__item__image--size11 w-100">
                         <div class="position-absolute  h-100 w-100 r-0 t-0 p-2 p-lg-6 mb-2 mb-lg-4 opacity-0 show">
@@ -329,7 +333,7 @@
                     <h3 class="pb-lg-4 border-sm-bottom border-black fw-sm-bold fs--7 fs-sm-8">這兩隻也太像企鵝了吧</h3>
                 </div>
                 <div class="swiper-slide">
-                    <a href="introduce-detal.html"
+                    <a href="workseries.html"
                         class="bg-white p-2 p-md-6 mb-2 mb-lg-4 position-relative Artwork__item">
                         <img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t39.30808-6/302365851_5842250465785344_6939489357168909033_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=e7k-Mfi5D78AX-sWBJG&_nc_ht=scontent-tpe1-1.xx&oh=00_AT_1VMUvsd-cPk1kilJpSfmwaMFzkncwiqH8_dbrOId6SQ&oe=6323D0F7"
                             alt="art09" class="Artwork__item__image--size11 w-100">
@@ -440,7 +444,31 @@
   <script src="./assets/js/vendors.js"></script>
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./assets/js/all.js"></script>
+  <script>
+    AOS.init({
+      // Global settings:
+      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+      startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+      initClassName: 'aos-init', // class applied after initialization
+      animatedClassName: 'aos-animate', // class applied on animation
+      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+      throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+      offset: 150, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 2500, // values from 0 to 3000, with step 50ms
+      easing: 'ease', // default easing for AOS animations
+      once: false, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+      anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+    });
+  </script>
 </body>
 
 </html>

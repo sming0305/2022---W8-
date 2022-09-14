@@ -28,6 +28,7 @@
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Paytone+One&family=Squada+One&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
@@ -45,9 +46,12 @@
                   class="fa-solid fa-magnifying-glass fs--12"></i></button>
             </form>
           </li>
-          <li><a href="explore.html" class="px-7 py-10 px-xl-12 fw-bold border-end border-primary btn--action">探索</a></li>
-          <li><a href="ranking.html" class="px-7 py-10 px-xl-12 fw-bold border-end border-primary btn--action">市值</a></li>
-          <li><a href="#" class="ps-7 py-10 ps-xl-12 btn--action" data-bs-toggle="modal" data-bs-target="#linkWallet" id="walletButton__pc">
+          <li><a href="explore.html" class="px-7 py-10 px-xl-12 fw-bold border-end border-primary btn--action">探索</a>
+          </li>
+          <li><a href="ranking.html" class="px-7 py-10 px-xl-12 fw-bold border-end border-primary btn--action">市值</a>
+          </li>
+          <li><a href="#" class="ps-7 py-10 ps-xl-12 btn--action" data-bs-toggle="modal" data-bs-target="#linkWallet"
+              id="walletButton__pc">
               <i class="fa-solid fa-wallet"></i></a>
           </li>
         </ul>
@@ -87,12 +91,11 @@
 <section class="pt-6 pb-12 pt-lg-10 pb-lg-20">
     <div class="container">
         <div class="row">
-
             <div class="col-lg-3 col-12">
                 <div class="modal fade show opacity-lg-100 d-lg-block position-lg-initial overflow-hidden"
                     id="workseries" tabindex="-1" aria-labelledby="workseriesLabel" aria-hidden="true"
                     style="overflow: initial;">
-                    <div class="modal-dialog modal-dialog-scrollable workseries--scrollbar">
+                    <div class="modal-dialog modal-dialog-scrollable workseries--scrollbar my-0">
                         <div class="modal-content overflow-lg-initial">
                             <div
                                 class="modal-header d-flex d-lg-none  border-primary justify-content-center d-sm-block position-relative">
@@ -104,7 +107,7 @@
                             </div>
                             <form action="index.html" class="modal-body">
                                 <div class="accordion" id="workseries__select">
-                                    <div class="accordion-item px-3 pt-6 px-lg-6 border-none border-lg-bottom">
+                                    <div class="accordion-item pt-6 border-none border-lg-bottom">
                                         <h4 class="accordion-header mb-4" id="workseries__heading1">
                                             <a class="accordion-button fw-bold introduce-detal-accordion-button"
                                                 data-bs-toggle="collapse" data-bs-target="#workseries__select--1"
@@ -131,7 +134,7 @@
 
                                         </div>
                                     </div>
-                                    <div class="accordion-item px-3 pt-6 px-lg-6 border-none border-lg-bottom">
+                                    <div class="accordion-item pt-6 border-none border-lg-bottom">
                                         <h4 class="accordion-header mb-4" id="workseries__heading2">
                                             <a class="accordion-button fw-bold introduce-detal-accordion-button"
                                                 data-bs-toggle="collapse" data-bs-target="#workseries__select--2"
@@ -158,7 +161,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="accordion-item px-3 pt-6 px-lg-6 border-none border-lg-bottom">
+                                    <div class="accordion-item pt-6 border-none border-lg-bottom">
                                         <h4 class="accordion-header mb-4" id="workseries__heading3">
                                             <a class="accordion-button fw-bold introduce-detal-accordion-button"
                                                 data-bs-toggle="collapse" data-bs-target="#workseries__select--3"
@@ -169,23 +172,23 @@
                                         <div id="workseries__select--3"
                                             class="accordion-collapse collapse show pb-6 border-bottom border-main border-lg-none"
                                             aria-labelledby="workseries__heading3">
-                                            <div class="mb-2 d-flex align-items-center">
+                                            <div class="mb-2 d-flex flex-lg-column flex-xl-row align-items-xl-center">
                                                 <select name="price" id="price"
-                                                    class="p-2 rounded-0 me-2 border-black border h-40">
+                                                    class="p-2 rounded-0 me-2 border-black border h-40 mb-lg-2 mb-xl-0">
                                                     <option value="ETH" selected name="price">ETH</option>
                                                     <option value="BTC" name="price">BTC</option>
                                                 </select>
                                                 <input class="form-control px-3 rounded-0 me-2 border-black border h-40"
-                                                    type="text" id="pricelow" name="status" style="max-width: 73px;">
+                                                    type="text" id="pricelow" name="price" style="max-width: 73px;">
                                                 <label class="form-check-label me-2" for="pricelow">
                                                     -
                                                 </label>
                                                 <input class="form-control px-3 rounded-0 border-black border h-40"
-                                                    type="text" id="pricehight" name="status" style="max-width: 73px;">
+                                                    type="text" id="pricehight" name="price" style="max-width: 73px;">
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="accordion-item px-3 pt-6 px-lg-6">
+                                    <div class="accordion-item pt-6">
                                         <p class="fw-bold text-info mb-6">屬性</p>
                                         <h4 class="accordion-header mb-4" id="workseries__heading4">
                                             <a class="accordion-button fw-bold introduce-detal-accordion-button"
@@ -202,28 +205,28 @@
                                                     八哥
                                                 </label>
                                                 <input class="form-check-input" type="checkbox" id="onlyshow"
-                                                    name="status">
+                                                    name="type">
                                             </div>
                                             <div class="mb-2 d-flex justify-content-between">
                                                 <label class="form-check-label" for="selling">
                                                     虎皮鸚鵡
                                                 </label>
                                                 <input class="form-check-input" type="checkbox" id="selling"
-                                                    name="status">
+                                                    name="type">
                                             </div>
                                             <div class="mb-2 d-flex justify-content-between">
                                                 <label class="form-check-label" for="selling">
                                                     太平鳥
                                                 </label>
                                                 <input class="form-check-input" type="checkbox" id="selling"
-                                                    name="status">
+                                                    name="type">
                                             </div>
                                             <div class="d-flex justify-content-between">
                                                 <label class="form-check-label" for="selling">
                                                     畫眉鳥
                                                 </label>
                                                 <input class="form-check-input" type="checkbox" id="selling"
-                                                    name="status">
+                                                    name="type">
                                             </div>
                                         </div>
                                         <h4 class="accordion-header mb-4 mb-6" id="workseries__heading5">
@@ -241,28 +244,28 @@
                                                     一枝獨秀
                                                 </label>
                                                 <input class="form-check-input" type="checkbox" id="onlyshow"
-                                                    name="status">
+                                                    name="number">
                                             </div>
                                             <div class="mb-2 d-flex justify-content-between">
                                                 <label class="form-check-label" for="selling">
                                                     成雙成對
                                                 </label>
                                                 <input class="form-check-input" type="checkbox" id="selling"
-                                                    name="status">
+                                                    name="number">
                                             </div>
                                             <div class="mb-2 d-flex justify-content-between">
                                                 <label class="form-check-label" for="selling">
                                                     三人成虎
                                                 </label>
                                                 <input class="form-check-input" type="checkbox" id="selling"
-                                                    name="status">
+                                                    name="number">
                                             </div>
                                             <div class="d-flex justify-content-between">
                                                 <label class="form-check-label" for="selling">
                                                     狐群狗黨
                                                 </label>
                                                 <input class="form-check-input" type="checkbox" id="selling"
-                                                    name="status">
+                                                    name="number">
                                             </div>
                                         </div>
 
@@ -281,28 +284,28 @@
                                                     華麗花叢
                                                 </label>
                                                 <input class="form-check-input" type="checkbox" id="onlyshow"
-                                                    name="status">
+                                                    name="flower">
                                             </div>
                                             <div class="mb-2 d-flex justify-content-between">
                                                 <label class="form-check-label" for="selling">
                                                     花田
                                                 </label>
                                                 <input class="form-check-input" type="checkbox" id="selling"
-                                                    name="status">
+                                                    name="flower">
                                             </div>
                                             <div class="mb-2 d-flex justify-content-between">
                                                 <label class="form-check-label" for="selling">
                                                     秋季
                                                 </label>
                                                 <input class="form-check-input" type="checkbox" id="selling"
-                                                    name="status">
+                                                    name="flower">
                                             </div>
                                             <div class="d-flex justify-content-between">
                                                 <label class="form-check-label" for="selling">
                                                     一般
                                                 </label>
                                                 <input class="form-check-input" type="checkbox" id="selling"
-                                                    name="status">
+                                                    name="flower">
                                             </div>
                                         </div>
 
@@ -321,28 +324,28 @@
                                                     強烈對比
                                                 </label>
                                                 <input class="form-check-input" type="checkbox" id="onlyshow"
-                                                    name="status">
+                                                    name="color">
                                             </div>
                                             <div class="mb-2 d-flex justify-content-between">
                                                 <label class="form-check-label" for="selling">
                                                     炫目
                                                 </label>
                                                 <input class="form-check-input" type="checkbox" id="selling"
-                                                    name="status">
+                                                    name="color">
                                             </div>
                                             <div class="mb-2 d-flex justify-content-between">
                                                 <label class="form-check-label" for="selling">
                                                     和諧
                                                 </label>
                                                 <input class="form-check-input" type="checkbox" id="selling"
-                                                    name="status">
+                                                    name="color">
                                             </div>
                                             <div class="d-flex justify-content-between">
                                                 <label class="form-check-label" for="selling">
                                                     一般
                                                 </label>
                                                 <input class="form-check-input" type="checkbox" id="selling"
-                                                    name="status">
+                                                    name="color">
                                             </div>
                                         </div>
                                     </div>
@@ -360,15 +363,238 @@
                 </div>
             </div>
             <div class="col-lg-9 col-12">
-                <div></div>
+                <div>
+                    <div class="d-flex align-items-center mb-1">
+                        <img src="./assets/images/artist01.jpg" alt="artist" class="size-32 me-4 rounded-circle">
+                        <p class="font-Squada lh-16_17">Michael</p>
+                    </div>
+                    <div class="d-md-flex justify-content-between align-items-end mb-10">
+                        <div class="w-md-54 mb-4 mb-md-0">
+                            <h2 class="fs--16 fw-bold lh-32_46 mb-2">我家外面的鳥</h2>
+                            <p>家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。</p>
+                        </div>
+                        <ul class="list-unstyled bg-white border border-black d-flex w-md-43">
+                            <li class="text-center w-25 py-4 position-relative workseries__info__decoration">
+                                <p class="pb-1 pb-md-2">項目</p>
+                                <span class="fs--10 fs-lg-12 lh-24_32 font-Squada">6.4 k</span>
+                            </li>
+                            <li class="text-center w-25 py-4 position-relative workseries__info__decoration">
+                                <p class="pb-1 pb-md-2">擁有者</p>
+                                <span class="fs--10 fs-lg-12 lh-24_32 font-Squada">2.5 k</span>
+                            </li>
+                            <li class="text-center w-25 py-4 position-relative workseries__info__decoration">
+                                <p class="pb-1 pb-md-2">底價</p>
+                                <div class="d-flex align-items-center justify-content-center"><i class="fa-brands fa-ethereum me-1"></i><span class="fs--10 fs-lg-12 lh-24_32 font-Squada">1.38 k</span></div>
+                            </li>
+                            <li class="text-center w-25 py-4">
+                                <p class="pb-1 pb-md-2">總額</p>
+                                <span class="fs--10 fs-lg-12 lh-24_32 font-Squada">2.8 k</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-flex justify-content-end mb-6 mb-lg-10 position-relative select">
+                        <i class="fa-solid fa-sort position-absolute size-12 select__type1" id="select__type1"></i>
+                        <select name="select-1" id="select-1" class="px-6 py-2 rounded-0 border-black outline-none select--clearn">
+                            <option value="最新上架" name="select-1" selected >最新上架</option>
+                            <option value="人氣上升中" name="select-1">人氣上升中</option>
+                            <option value="排行榜前十" name="select-1">排行榜前十</option>
+                            <option value="極具潛力" name="select-1">極具潛力</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row masonry" data-masonry='{"percentPosition": true }'>
+                    <div class="col-6 col-xl-4 mb-4 mb-sm-12">
+                        <a href="introduce-detal.html"
+                            class="bg-white p-2 p-lg-6 mb-2 mb-lg-4 position-relative Artwork__item">
+                            <img src="./assets/images/art20.jpg" alt="art09" class="Artwork__item__image--size1 w-100">
+                            <div class="position-absolute  h-100 w-100 r-0 t-0 p-2 p-lg-6 mb-2 mb-lg-4 opacity-0 show">
+                                <div class="h-100 w-100 p-4 background-color-rgba-opacity-70 text-white">
+                                    <div
+                                        class="d-flex flex-column justify-content-between h-100 w-100 border border-white p-4">
+                                        <div>
+                                            <p class="mb-4 d-none d-md-block">其實是國寶</p>
+                                            <i class="fa-brands fa-ethereum me-2"></i><span
+                                                class="font-Squada">300</span>
+                                        </div>
+                                        <div class="d-flex justify-content-end">
+                                            <button type="button"
+                                                class="button-type1 bg-white z-18 d-none d-sm-block">MORE</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <h3 class="pb-lg-4 border-sm-bottom border-black fw-sm-bold fs--7 fs-sm-8">這兩隻也太像企鵝了吧</h3>
+                    </div>
+                    <div class="col-6 col-xl-4 mb-4 mb-sm-12">
+                        <a href="introduce-detal.html"
+                            class="bg-white p-2 p-lg-6 mb-2 mb-lg-4 position-relative Artwork__item">
+                            <img src="./assets/images/art21.jpg" alt="art09" class="Artwork__item__image--size2 w-100">
+                            <div class="position-absolute  h-100 w-100 r-0 t-0 p-2 p-lg-6 mb-2 mb-lg-4 opacity-0 show">
+                                <div class="h-100 w-100 p-4 background-color-rgba-opacity-70 text-white">
+                                    <div
+                                        class="d-flex flex-column justify-content-between h-100 w-100 border border-white p-4">
+                                        <div>
+                                            <p class="mb-4 d-none d-md-block">這可不好說</p>
+                                            <i class="fa-brands fa-ethereum me-2"></i><span
+                                                class="font-Squada">300</span>
+                                        </div>
+                                        <div class="d-flex justify-content-end">
+                                            <button type="button"
+                                                class="button-type1 bg-white z-18 d-none d-sm-block">MORE</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <h3 class="pb-lg-4 border-sm-bottom border-black fw-sm-bold fs--7 fs-sm-8">兩情相悅</h3>
+                    </div>
+                    <div class="col-6 col-xl-4 mb-4 mb-sm-12">
+                        <a href="introduce-detal.html"
+                            class="bg-white p-2 p-lg-6 mb-2 mb-lg-4 position-relative Artwork__item">
+                            <img src="./assets/images/art22.jpg" alt="art09" class="Artwork__item__image--size3 w-100">
+                            <div class="position-absolute  h-100 w-100 r-0 t-0 p-2 p-lg-6 mb-2 mb-lg-4 opacity-0 show">
+                                <div class="h-100 w-100 p-4 background-color-rgba-opacity-70 text-white">
+                                    <div
+                                        class="d-flex flex-column justify-content-between h-100 w-100 border border-white p-4">
+                                        <div>
+                                            <p class="mb-4 d-none d-md-block">罰款不用說</p>
+                                            <i class="fa-brands fa-ethereum me-2"></i><span
+                                                class="font-Squada">300</span>
+                                        </div>
+                                        <div class="d-flex justify-content-end">
+                                            <button type="button"
+                                                class="button-type1 bg-white z-18 d-none d-sm-block">MORE</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <h3 class="pb-lg-4 border-sm-bottom border-black fw-sm-bold fs--7 fs-sm-8">群聚的小鳥們</h3>
+                    </div>
+                    <div class="col-6 col-xl-4 mb-4 mb-sm-12">
+                        <a href="introduce-detal.html"
+                            class="bg-white p-2 p-lg-6 mb-2 mb-lg-4 position-relative Artwork__item">
+                            <img src="./assets/images/art23.jpg" alt="art09" class="Artwork__item__image--size4 w-100">
+                            <div class="position-absolute  h-100 w-100 r-0 t-0 p-2 p-lg-6 mb-2 mb-lg-4 opacity-0 show">
+                                <div class="h-100 w-100 p-4 background-color-rgba-opacity-70 text-white">
+                                    <div
+                                        class="d-flex flex-column justify-content-between h-100 w-100 border border-white p-4">
+                                        <div>
+                                            <p class="mb-4 d-none d-md-block">感情連結</p>
+                                            <i class="fa-brands fa-ethereum me-2"></i><span
+                                                class="font-Squada">300</span>
+                                        </div>
+                                        <div class="d-flex justify-content-end">
+                                            <button type="button"
+                                                class="button-type1 bg-white z-18 d-none d-sm-block">MORE</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <h3 class="pb-lg-4 border-sm-bottom border-black fw-sm-bold fs--7 fs-sm-8">與你分享的快樂勝過獨自擁有</h3>
+                    </div>
+                    
+                    <div class="col-6 col-xl-4 mb-sm-12">
+                        <a href="introduce-detal.html"
+                            class="bg-white p-2 p-lg-6 mb-2 mb-lg-4 position-relative Artwork__item">
+                            <img src="./assets/images/art25.jpg" alt="art09" class="Artwork__item__image--size7 w-100">
+                            <div class="position-absolute  h-100 w-100 r-0 t-0 p-2 p-lg-6 mb-2 mb-lg-4 opacity-0 show">
+                                <div class="h-100 w-100 p-4 background-color-rgba-opacity-70 text-white">
+                                    <div
+                                        class="d-flex flex-column justify-content-between h-100 w-100 border border-white p-4">
+                                        <div>
+                                            <p class="mb-4 d-none d-md-block">內用外帶</p>
+                                            <i class="fa-brands fa-ethereum me-2"></i><span
+                                                class="font-Squada">300</span>
+                                        </div>
+                                        <div class="d-flex justify-content-end">
+                                            <button type="button"
+                                                class="button-type1 bg-white z-18 d-none d-sm-block">MORE</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <h3 class="pb-lg-4 border-sm-bottom border-black fw-sm-bold fs--7 fs-sm-8">一大一小兩個恰恰好</h3>
+                    </div>
+                    <div class="col-6 col-xl-4 mb-4 mb-sm-12">
+                        <a href="introduce-detal.html"
+                            class="bg-white p-2 p-lg-6 mb-2 mb-lg-4 position-relative Artwork__item">
+                            <img src="./assets/images/art24.jpg" alt="art09" class="Artwork__item__image--size12 w-100">
+                            <div class="position-absolute  h-100 w-100 r-0 t-0 p-2 p-lg-6 mb-2 mb-lg-4 opacity-0 show">
+                                <div class="h-100 w-100 p-4 background-color-rgba-opacity-70 text-white">
+                                    <div
+                                        class="d-flex flex-column justify-content-between h-100 w-100 border border-white p-4">
+                                        <div>
+                                            <p class="mb-4 d-none d-md-block">招搖撞騙</p>
+                                            <i class="fa-brands fa-ethereum me-2"></i><span
+                                                class="font-Squada">300</span>
+                                        </div>
+                                        <div class="d-flex justify-content-end">
+                                            <button type="button"
+                                                class="button-type1 bg-white z-18 d-none d-sm-block">MORE</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <h3 class="pb-lg-4 border-sm-bottom border-black fw-sm-bold fs--7 fs-sm-8">會唱metal的鳥</h3>
+                    </div>
+                    <div class="col-6 col-xl-4 mb-4 mb-sm-12 d-block d-sm-none">
+                        <a href="introduce-detal.html"
+                            class="bg-white p-2 p-lg-6 mb-2 mb-lg-4 position-relative Artwork__item">
+                            <img src="./assets/images/art26.jpg" alt="art09" class="Artwork__item__image--size7 w-100">
+                            <div class="position-absolute  h-100 w-100 r-0 t-0 p-2 p-lg-6 mb-2 mb-lg-4 opacity-0 show">
+                                <div class="h-100 w-100 p-4 background-color-rgba-opacity-70 text-white">
+                                    <div
+                                        class="d-flex flex-column justify-content-between h-100 w-100 border border-white p-4">
+                                        <div>
+                                            <p class="mb-4 d-none d-md-block">讓無法挽回的事情，成為不影響未來的過去</p>
+                                            <i class="fa-brands fa-ethereum me-2"></i><span
+                                                class="font-Squada">300</span>
+                                        </div>
+                                        <div class="d-flex justify-content-end">
+                                            <button type="button"
+                                                class="button-type1 bg-white z-18 d-none d-sm-block">MORE</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <h3 class="pb-lg-4 border-sm-bottom border-black fw-sm-bold fs--7 fs-sm-8">我這樣有美嗎</h3>
+                    </div>
+                    <div class="col-6 col-xl-4 mb-sm-12 d-block d-sm-none">
+                        <a href="introduce-detal.html"
+                            class="bg-white p-2 p-lg-6 mb-2 mb-lg-4 position-relative Artwork__item">
+                            <img src="./assets/images/art27.jpg" alt="art09" class="Artwork__item__image--size6 w-100">
+                            <div class="position-absolute  h-100 w-100 r-0 t-0 p-2 p-lg-6 mb-2 mb-lg-4 opacity-0 show">
+                                <div class="h-100 w-100 p-4 background-color-rgba-opacity-70 text-white">
+                                    <div
+                                        class="d-flex flex-column justify-content-between h-100 w-100 border border-white p-4">
+                                        <div>
+                                            <p class="mb-4 d-none d-md-block">再給我十分鐘</p>
+                                            <i class="fa-brands fa-ethereum me-2"></i><span
+                                                class="font-Squada">300</span>
+                                        </div>
+                                        <div class="d-flex justify-content-end">
+                                            <button type="button"
+                                                class="button-type1 bg-white z-18 d-none d-sm-block">MORE</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <h3 class="pb-lg-4 border-sm-bottom border-black fw-sm-bold fs--7 fs-sm-8">十分鐘就到</h3>
+                    </div>
+                </div>
             </div>
-
         </div>
-    </div>
-    <button type="button" class="btn btn-primary position-fixed workseries__button rounded-0 d-block d-lg-none"
-        data-bs-toggle="modal" data-bs-target="#workseries">
-        篩選條件 2
-    </button>
+        <button type="button" class="btn btn-primary position-fixed workseries__button rounded-0 d-block d-lg-none"
+            data-bs-toggle="modal" data-bs-target="#workseries">
+            篩選條件 2
+        </button>
 </section>
 
   </main>
@@ -453,7 +679,31 @@
   <script src="./assets/js/vendors.js"></script>
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./assets/js/all.js"></script>
+  <script>
+    AOS.init({
+      // Global settings:
+      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+      startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+      initClassName: 'aos-init', // class applied after initialization
+      animatedClassName: 'aos-animate', // class applied on animation
+      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+      throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+      offset: 150, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 2500, // values from 0 to 3000, with step 50ms
+      easing: 'ease', // default easing for AOS animations
+      once: false, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+      anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+    });
+  </script>
 </body>
 
 </html>
