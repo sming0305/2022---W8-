@@ -1,4 +1,5 @@
 
+
 $(document).ready(function () {
   $("#offcanvasButton").click(function (e) {
     $(".offcanvas-backdrop").toggleClass("show");
@@ -68,7 +69,70 @@ $(document).ready(function () {
     $(".workseries__menu__modal-backdrop").removeClass("active");
   });
 
+
+
+  let $window = $(window);
+
+  function checkWidth() {
+    let wdth = $window.width();
+    if (wdth < 768) {
+      $(".collapse__1").attr('id', 'collapse__1');
+    } else if (wdth >= 768) {
+      $(".collapse__1").removeAttr('id');
+    }
+
+    if (wdth < 768) {
+      $(".collapse__2").attr('id', 'collapse__2');
+    } else if (wdth >= 768) {
+      $(".collapse__2").removeAttr('id');
+    }
+    if (wdth < 768) {
+      $(".collapse__3").attr('id', 'collapse__3');
+    } else if (wdth >= 768) {
+      $(".collapse__3").removeAttr('id');
+    }
+    if (wdth < 768) {
+      $(".collapse__4").attr('id', 'collapse__4');
+    } else if (wdth >= 768) {
+      $(".collapse__4").removeAttr('id');
+    }
+    if (wdth < 768) {
+      $(".collapse__5").attr('id', 'collapse__5');
+    } else if (wdth >= 768) {
+      $(".collapse__5").removeAttr('id');
+    }
+    if (wdth < 768) {
+      $(".collapse__6").attr('id', 'collapse__6');
+    } else if (wdth >= 768) {
+      $(".collapse__6").removeAttr('id');
+    }
+    if (wdth < 768) {
+      $(".collapse__7").attr('id', 'collapse__7');
+    } else if (wdth >= 768) {
+      $(".collapse__7").removeAttr('id');
+    }
+    if (wdth < 768) {
+      $(".collapse__8").attr('id', 'collapse__8');
+    } else if (wdth >= 768) {
+      $(".collapse__8").removeAttr('id');
+    }
+    if (wdth < 768) {
+      $(".collapse__9").attr('id', 'collapse__9');
+    } else if (wdth >= 768) {
+      $(".collapse__9").removeAttr('id');
+    }   
+    if (wdth < 768) {
+      $(".collapse__10").attr('id', 'collapse__10');
+    } else if (wdth >= 768) {
+      $(".collapse__10").removeAttr('id');
+    }
+  }
+  checkWidth();
+  $(window).resize(checkWidth);
+
+
 });
+
 
 var swiper = new Swiper('.swiper-container-1', {
   speed: 1600,

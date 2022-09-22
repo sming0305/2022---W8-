@@ -25,6 +25,12 @@ img {
 }
 
 
+//body overflow-x: hidden for AOS 套件短暫出現的 X 軸
+body{
+    overflow-x: hidden;
+}
+
+
 // Fix IOS 15.x  button color blue default 
 button {
     color: #000 ;

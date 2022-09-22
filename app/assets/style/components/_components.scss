@@ -19,6 +19,13 @@
     }
 }
 
+.list--hover{
+    &:hover{
+        background-color: #F0F0F0 !important;
+        cursor: pointer;
+    }
+}
+
 .border-md-none {
     @include md {
         border: none !important;
