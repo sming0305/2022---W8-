@@ -21315,6 +21315,11 @@ progress {
   color: #ec7c68;
 }
 
+.list--hover:hover {
+  background-color: #F0F0F0 !important;
+  cursor: pointer;
+}
+
 @media (min-width: 768px) {
   .border-md-none {
     border: none !important;
@@ -21515,6 +21520,7 @@ progress {
 
 .button-type1:hover {
   background-color: #E6553B !important;
+  color: #ffffff;
 }
 
 .button-type1:hover::before {
@@ -21523,7 +21529,7 @@ progress {
 }
 
 .button-type1:active {
-  color: #ffffff;
+  color: #000;
 }
 
 .button-type2 {
@@ -21555,8 +21561,12 @@ progress {
   border-bottom: 8px solid #000;
 }
 
-.button-type2:active {
+.button-type2:hover {
   color: #ffffff;
+}
+
+.button-type2:active {
+  color: #000;
 }
 
 html,
@@ -21589,6 +21599,10 @@ img {
   vertical-align: middle;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 button {
